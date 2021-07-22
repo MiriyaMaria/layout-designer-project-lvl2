@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+$breakpoints: (
+  breakpoint-desktop: 1240px,
+  breakpoint-mobile: 414px
+);
+
+@mixin media($type: desktop) {
+    $value: breakpoint-#{$type};
+    @media screen and (max-width: map-get($breakpoints, $value)) {
+      @content;
+    }
+}
+
+body {
+    @include media(desktop) {
+        width: 1200px;
+    }
+
+    @include media(mobile) {
+        width: 100%;
+    }
+
+    font: 18px/1.5 Roboto, sans-serif;
+    
+    color: $dark-gray;
+ 
+    background-color: $dark;
+ }
+
+ h1 {
+     @include media(desktop) {
+        font: bold 60px/90px Roboto, sans-serif;
+        text-transform: capitalize;
+     }
+     @include media(mobile) {
+        font: bold 30px/45px Roboto, sans-serif;
+        text-transform: capitalize;
+    }
+ }
+
+ h2 {
+    @include media(desktop) {
+        font: bold 38px/57px Roboto, sans-serif;
+        text-transform: capitalize;
+     }
+     @include media(mobile) {
+        font: bold 18px/27px Roboto, sans-serif;
+        text-transform: capitalize;
+    }
+ }

@@ -1,0 +1,34 @@
+#navigation {
+    display: flex;
+}
+
+.background-image {
+    background-image: url('../images/banner.png');
+    background-position: center;
+    background-size: cover; 
+}
+
+#page-description {
+    padding: 200px 0;
+
+    &.sign-up {
+        max-width: 570px;
+    }
+
+    &.input-items {
+        min-width: 270px;
+        min-height: 50px;
+        
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+
+        border: 2px solid $dark-gray;
+        border-radius: 3px;
+    }
+
+    &.submit-btn {
+        padding: 20px 30px;
+
+        border-radius: 5px;
+    }
+}
