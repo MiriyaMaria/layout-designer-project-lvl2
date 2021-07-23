@@ -1,0 +1,65 @@
+.banner {
+    position: relative;
+    padding: 200px 0;
+    background-image: url('../images/banner.png');
+    background-position: center;
+    background-size: cover; 
+    text-align: center;
+     &_title {
+         margin: 0;
+        font: bold 60px/90px Roboto, sans-serif;
+        text-transform: uppercase;
+                 
+         @include mobile {
+            font-size: 30px;
+            line-height: 45px;
+        }
+        span {
+           display: block; 
+           font: bold 38px/57px Roboto, sans-serif;
+           text-transform: uppercase;
+
+            @include mobile {
+                font-size: 18px;
+                line-height: 27px;
+            }
+        }
+    }
+    &_description {
+        margin-top: 31px;
+        margin-bottom: 17px;
+        font-size: 16px;
+    }
+    .sign-up {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+
+        margin: 0 auto;
+        max-width: 570px;
+    }
+
+    .input-item {
+        min-width: 270px;
+        min-height: 50px;
+        
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+        box-sizing: border-box;
+        background: none;
+        border: 2px solid $dark-gray;
+        border-radius: 3px;
+    }
+
+    .submit-btn {
+        padding: 20px 30px;
+        grid-column: span 2;
+        box-sizing: border-box;
+        border: none;
+        background-color: $green;
+        border-radius: 5px;
+        font-size: 14px;
+        color: white;
+        text-transform: uppercase;
+    }  
+}

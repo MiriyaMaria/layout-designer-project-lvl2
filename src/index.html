@@ -4,39 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
     <title>Портал «Music Box» Мария Чурилова</title>
 </head>
 <body>
-    <header class="backgorund-image">
-        <section id="navigation">
-            <div class="logo">music box</div>
-            <nav class="menu">
-                <ul>
-                    <li class="menu-item">главная</li>
-                    <li class="menu-item">каталог</li>
-                    <li class="menu-item">исполнители</li>
-                    <li class="menu-item">контакты</li>
+    <header id="navigation" class="header">
+        <div class="container flex">
+            <div class="header_logo"><a  class="menu-item" href="#">music box</a></div>
+            <nav>
+                <ul class="header_menu flex">
+                    <li><a class="menu-item" href="#">главная</a></li>
+                    <li><a class="menu-item" href="#">каталог</a></li>
+                    <li><a class="menu-item" href="#">исполнители</a></li>
+                    <li><a class="menu-item" href="#">контакты</a></li>
                 </ul>
             </nav>
-            <form action="" class="search">
-                <input type="search" placeholder="Поиск">
+            <form action="" class="header_search">
+                <input type="search" class="header_search_window" placeholder="Поиск...">
             </form>
-        </section>
-        <section id="page-description">
-            <h1>онлайн музыка где угодно</h1>
-            <h2>без ограничений</h2>
-            <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-            <form action="" class="sign-up">
-                <div class="input-information">
-                    <input class="input-item" type="text" placeholder="Имя">
-                    <input class="input-item" type="email" placeholder="Email">
-                </div>
-                <button type="submit" class="submit-btn">получить доступ</button>
-            </form>
-        </section>
+        </div>
     </header>
     <main>
-        
+        <section id="page-description" class="banner">
+            <div class="container">
+                <h1 class="banner_title">онлайн музыка где угодно <span>без ограничений</span></h1>
+                <p class="banner_description">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+                <form action="" class="sign-up">
+                    <input class="input-item" type="text" placeholder="Имя">
+                    <input class="input-item" type="email" placeholder="Email">
+                    <button type="submit" class="submit-btn">получить доступ</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>

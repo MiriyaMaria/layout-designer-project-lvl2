@@ -1,34 +1,48 @@
-#navigation {
-    display: flex;
-}
-
-.background-image {
-    background-image: url('../images/banner.png');
-    background-position: center;
-    background-size: cover; 
-}
-
-#page-description {
-    padding: 200px 0;
-
-    &.sign-up {
-        max-width: 570px;
+.header {
+    position: absolute;
+    top: 25px;
+    z-index: 1;
+    width: 100%;
+    height: 25px;
+    
+    .flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
-
-    &.input-items {
-        min-width: 270px;
-        min-height: 50px;
+    &_logo {
+        padding-left: 40px;
+        padding-right: 91px;
+        background: url('../images/logo.svg') no-repeat;
+        background-size: 24px;
+    }
+    .menu-item {
+        font-size: 11px;
+        color: $dark-gray;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    &_menu {
+        margin: 0;
+        list-style-type: none;
+        gap: 20px;
+    }
+    &_search {
+        margin-left: auto;
+        &_window {
+        padding: 5px 0 5px 10px;
+        width: 248px;
+        height: 25px;
+        background-color: rgba(60, 59, 61, 1);
+        border: none;
+        border-radius: 50px;
+        font-size: 14px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        }
         
-        margin-bottom: 1.5rem;
-        padding-left: 20px;
-
-        border: 2px solid $dark-gray;
-        border-radius: 3px;
-    }
-
-    &.submit-btn {
-        padding: 20px 30px;
-
-        border-radius: 5px;
     }
 }
+
+
+
