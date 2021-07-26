@@ -6,7 +6,7 @@
     background-size: cover; 
     text-align: center;
      &_title {
-         margin: 0;
+        margin: 0;
         font: bold 60px/90px Roboto, sans-serif;
         text-transform: uppercase;
                  
@@ -32,7 +32,7 @@
     }
     .sign-up {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
         column-gap: 24px;
 
         margin: 0 auto;

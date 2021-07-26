@@ -1,0 +1,92 @@
+.subscription {
+    padding-top: 100px;
+    text-align: center;
+
+    &_title {
+        margin-top: 0;
+        margin-bottom: 45px;
+        
+        font-size: 38px;
+        font-weight: bold;
+        
+        text-transform: uppercase;
+
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .free {
+        background-image: (url('../images/subscribe_1.png'));
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-size: cover;
+    }
+
+    .standard {
+        background-image: (url('../images/subscribe_2.png'));
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-size: cover;
+    }
+
+    .premium {
+        background-image: (url('../images/subscribe_3.png'));
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-size: cover;
+    }
+
+    &_card {
+        width: 369px;
+        margin-bottom: 43px;
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+        border-radius: 1rem;
+
+        &_title {
+            margin: 24px 0 200px 0;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        &_price {
+            margin: 0 0 40px 0;
+            font-size: 64px;
+            line-height: 1em;
+
+            .currency {
+            font-size: 32px;
+            text-transform: uppercase;
+            vertical-align: text-top;
+            }
+        }
+
+        &_btn {
+            display: block;
+            width: 100%;
+            padding: 20px 30px;
+            box-sizing: border-box;
+            border: 2px solid $dark-gray;
+            border-radius: 5px;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    
+        &_text {
+            margin: 64px 0;
+            font-size: 13px;
+        }
+    }
+
+    &_description {
+        margin-top: 0;
+        font-size: 16px;
+    }
+}
