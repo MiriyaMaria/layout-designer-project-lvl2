@@ -11,12 +11,11 @@
     <header id="navigation" class="header">
         <div class="container flex">
             <div class="header_logo"><a  class="menu-item" href="#">music box</a></div>
-            <nav>
-                <ul class="header_menu flex">
-                    <li><a class="menu-item" href="#">главная</a></li>
-                    <li><a class="menu-item" href="#">каталог</a></li>
-                    <li><a class="menu-item" href="#">исполнители</a></li>
-                    <li><a class="menu-item" href="#">контакты</a></li>
+            <nav class="header_menu flex">
+                <a class="menu-item" href="#">главная</a>
+                <a class="menu-item" href="#">каталог</a>
+                <a class="menu-item" href="#">исполнители</a>
+                <a class="menu-item" href="#">контакты</a>
                 </ul>
             </nav>
             <form action="" class="header_search">
@@ -39,7 +38,7 @@
         <section id="page-pricing" class="subscription">
             <div class="container">
                 <h2 class="subscription_title">Формы подписки</h2>
-                <div class="flex">
+                <div class="subscription_grid">
                     <div class="subscription_card free">
                         <h3 class="subscription_card_title">Бесплатная</h3>
                         <p class="subscription_card_price">0 <span class="currency">руб.</span></p>
@@ -60,6 +59,40 @@
                     </div>
                 </div>
                 <p class="subscription_description">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+            </div>
+        </section>
+        <section id="page-news" class="news">
+            <div class="container">
+                <h2 class="news_title">Последние новости</h2>
+                <div class="news_item">
+                    <img class="artist_photo" src="./images/Music to Be Murdered By.png" alt="Eminem">
+                    <div class="news_item_body">
+                        <h3 class="news_item_title">Music To Be Murdered By</h3>
+                        <p class="news_item_text">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</p>
+                    </div>
+                    <div class="news_item_footer">
+                        <div class="news_item_author">
+                            <a  class="news_item_author_avatar" href="#">music box</a>
+                            <span class="date">17/01/2020</span>
+                        </div>
+                        <a href="#" class="news_item_btn">К альбому</a>
+                    </div>
+                </div>
+                <div class="news_item">
+                    <div class="news_item_body">
+                        <h3 class="news_item_title">Ordinary Man</h3>
+                        <p class="news_item_text">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</p>
+                    </div>
+                    <div class="news_item_footer">
+                        <div class="news_item_author">
+                            <a  class="news_item_author_avatar" href="#">music box</a>
+                            <span class="date">24/02/2020</span>
+                        </div>
+                        <a href="#" class="news_item_btn">К альбому</a>
+                    </div>
+                    <img class="artist_photo right_side" src="./images/Ordinary Man.png" alt="Ozzi Osburn">
+                </div>
+            </div>
             </div>
         </section>
     </main>

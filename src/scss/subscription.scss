@@ -4,20 +4,18 @@
 
     &_title {
         margin-top: 0;
-        margin-bottom: 45px;
+        margin-bottom: 50px;
         
         font-size: 38px;
         font-weight: bold;
         
         text-transform: uppercase;
-
     }
 
-    .flex {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+    &_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
+        gap: 47px;
     }
     
     .free {
@@ -42,7 +40,7 @@
     }
 
     &_card {
-        width: 369px;
+        min-width: 368px;
         margin-bottom: 43px;
         padding: 0 1.5rem;
         box-sizing: border-box;
@@ -77,6 +75,13 @@
             color: white;
             text-decoration: none;
             text-transform: uppercase;
+
+            &:hover {
+                color: $orange;
+                border: 2px solid $orange;
+                
+                transition: 1s;
+            }
         }
     
         &_text {

@@ -47,13 +47,15 @@
         padding-left: 20px;
         box-sizing: border-box;
         background: none;
+        color: white;
         border: 2px solid $dark-gray;
         border-radius: 3px;
     }
 
     .submit-btn {
         padding: 20px 30px;
-        grid-column: span 2;
+        grid-column-start: 1;
+        grid-column-end: -1;
         box-sizing: border-box;
         border: none;
         background-color: $green;
@@ -61,5 +63,12 @@
         font-size: 14px;
         color: white;
         text-transform: uppercase;
+
+        &:hover {
+            color: $orange;
+            opacity: 0.8;
+
+            transition: 1s;
+        }
     }  
 }

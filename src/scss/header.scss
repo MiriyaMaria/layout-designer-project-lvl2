@@ -22,12 +22,15 @@
         color: $dark-gray;
         text-decoration: none;
         text-transform: uppercase;
+
+        &:hover {
+            color: $orange;
+        }
     }
     &_menu {
         margin: 0;
         padding: 0;
 
-        list-style-type: none;
         gap: 24px;
     }
     &_search {
@@ -39,6 +42,8 @@
         background-color: rgba(60, 59, 61, 1);
         border: none;
         border-radius: 50px;
+
+        color: white;
         font-size: 14px;
         line-height: 1.2;
         text-transform: uppercase;
