@@ -1,0 +1,63 @@
+.btn {
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  transition: 1s;
+  border-radius: 5px;
+
+  &_submit {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    background-color: $green;
+    &:hover {
+      color: $orange;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+  
+  &_sub {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid $dark-gray;
+    font-size: 16px;
+    display: block;
+    
+    &:hover {
+      color: $orange;
+      border-color: $orange;
+    }
+  }
+
+  &_more {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+    border: 2px solid $dark-gray;
+    font-size: 12px;
+    &:hover {
+      color: $orange;
+      border-color: $orange;
+    }
+  }
+
+  &_download {
+    display: inline-block;
+    padding: 16px 40px;
+    border-radius: 32px;
+    background-color: $red;
+
+    font-size: 12.8px;
+    &:hover {
+      color: $orange;
+      border: 2px solid $orange;
+    }
+  }
+}

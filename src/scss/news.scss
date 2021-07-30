@@ -1,17 +1,4 @@
 .news {
-    padding-top: 100px;
-    text-align: center;
-
-    &_title {
-        margin-top: 0;
-        margin-bottom: 50px;
-        
-        font-size: 38px;
-        font-weight: bold;
-        
-        text-transform: uppercase;
-    }
-
     &_item {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(575px, 1fr));
@@ -32,26 +19,17 @@
             margin: 0 0 24px;
             font-size: 16px;
         }
-
-        &_footer {
-            text-align: left;
-            
-        }
-
         &_author {
-            margin: 0 0 48px 0px;
+            display: flex;
+            gap: 16px;
+            margin: 0 0 57px 0px;
             font-size: 12px;
 
-            &_avatar {
-                margin-right: 16px;
-                padding-left: 35px;
+            &_link {
                 color: $orange;
                 text-transform: uppercase;
                 text-decoration: none;
-                background-image: url("../images/avatar.png");
-                background-repeat: no-repeat;
-                background-size: 19px;
-
+                
                 &:hover {
                     color: white;
 
@@ -60,36 +38,8 @@
             }
         }
 
-        &_btn {
-            margin-bottom: 20px;
-            padding: 16px 30px;
-            box-sizing: border-box;
-            border: 2px solid $dark-gray;
-            border-radius: 5px;
-            font-size: 12px;
-            color: white;
-            text-decoration: none;
-            text-transform: uppercase;
-
-            &:hover {
-                color: $orange;
-                border: 2px solid $orange;
-                
-                transition: 1s;
-            }
-        }
-
         &:not(:last-child) {
             margin-bottom: 65px;
         }
-    }
-
-    .artist_photo {
-        grid-row-start: 1;
-        grid-row-end: 3;
-    }
-
-    .right_side {
-        grid-column: 2 / 3;
     }
 }
