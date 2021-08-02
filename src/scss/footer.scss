@@ -1,0 +1,51 @@
+.bg-gradient {
+    background: linear-gradient(89.75deg, $purple 32.83%, $red 81.56%);
+  }
+
+.footer_wrapper {
+    
+        &_up {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            column-gap: 40px;
+            padding-top: 3rem;
+            padding-bottom: 4.5rem;
+        }
+
+        &_down {
+            display: flex;
+            gap: 16px;
+            border-top: 1px solid $dark-gray;
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+            & > .footer_link {
+                display: inline-block;
+            }
+        }
+}
+
+.link_wrapper {
+    display: flex;
+    gap: 24px;
+}
+
+.footer_title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer_link {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray;
+    text-decoration: none;
+}
+
+.contact_data {
+    margin: 0;
+    font-size: 16px;
+}
