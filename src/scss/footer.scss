@@ -3,6 +3,7 @@
   }
 
 .footer_wrapper {
+    border-top: 1px solid $dark-gray;
     
         &_up {
             display: grid;
@@ -15,7 +16,6 @@
         &_down {
             display: flex;
             gap: 16px;
-            border-top: 1px solid $dark-gray;
             padding-top: 2.5rem;
             padding-bottom: 2.5rem;
             & > .footer_link {

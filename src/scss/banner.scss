@@ -29,7 +29,20 @@
         margin-top: 31px;
         margin-bottom: 17px;
         font-size: 16px;
+        &_artist {
+            margin-top: 16px;
+            margin-bottom: 48px;
+            font-size: 16px;
+            color: white;
+            text-align: left;
+        }
     } 
+
+    &_artist {
+        padding-top: 250px;
+        padding-bottom: 230px;
+        background-image: url('../images/Morten\ Harket.png'); 
+    }
 }
 
 .sign-up {

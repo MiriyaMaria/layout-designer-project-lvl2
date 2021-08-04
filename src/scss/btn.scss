@@ -60,4 +60,25 @@
       border: 2px solid $orange;
     }
   }
+
+  &_mix {
+    display: inline-block;
+    width: 200px;
+    padding: 20px 30px;
+    font-size: 12.8px;
+    align-items: center;
+    &:hover {
+      color: $orange;
+      border: 2px solid $orange;
+    }
+  }
+}
+
+.blue {
+  margin-right: 1.5rem;
+  background-color: $purple;
+}
+
+.red {
+  background-color: $red;
 }
