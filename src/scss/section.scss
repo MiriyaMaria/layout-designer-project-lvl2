@@ -33,5 +33,8 @@
     padding-top: 100px;
     text-align: left;
     color: white;
+    &:last-child {
+      margin-bottom: 100px;
+    }
   }
 }

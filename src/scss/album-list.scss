@@ -3,6 +3,10 @@
     grid-template-columns: repeat(auto-fit, 250px);
     column-gap: 50px;
     row-gap: 25px;
+
+    @include mobile {
+        grid-template-columns: repeat(auto-fit, 137px);
+    }
 }
 
 .item_title {
@@ -18,4 +22,16 @@
     color: $gray;
     font-size: 16px;
     line-height: 24px;
+}
+
+.list_item_center {
+    text-align: center;
+}
+
+.item_image {
+    width: 250px;
+
+    @include mobile {
+        width: 137px;
+    }
 }
