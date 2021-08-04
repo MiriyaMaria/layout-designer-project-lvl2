@@ -1,0 +1,21 @@
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    column-gap: 50px;
+    row-gap: 25px;
+}
+
+.item_title {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.item_description {
+    margin: 0;
+    color: $gray;
+    font-size: 16px;
+    line-height: 24px;
+}

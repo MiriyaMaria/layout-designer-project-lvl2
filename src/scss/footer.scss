@@ -4,7 +4,7 @@
 
 .footer_wrapper {
     border-top: 1px solid $dark-gray;
-    
+
         &_up {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -15,6 +15,7 @@
 
         &_down {
             display: flex;
+            flex-wrap: wrap;
             gap: 16px;
             padding-top: 2.5rem;
             padding-bottom: 2.5rem;
