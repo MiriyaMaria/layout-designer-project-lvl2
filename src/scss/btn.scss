@@ -67,17 +67,17 @@
     padding: 20px 30px;
     font-size: 12.8px;
     align-items: center;
+    border: 2px solid transparent;
     &:hover {
-      border: 2px solid $orange;
+      border-color: $orange;
     }
   }
-}
 
-.blue {
-  margin-right: 1.5rem;
-  background-color: $purple;
-}
+  &_blue {
+    background-color: $purple;
+  }
 
-.red {
-  background-color: $red;
+  &_red {
+    background-color: $red;
+  }
 }

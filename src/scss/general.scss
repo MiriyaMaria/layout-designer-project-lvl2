@@ -1,44 +1,61 @@
 @font-face {
-    font-family: Roboto;
-    font-weight: 400;
-    src: url(../fonts/Roboto-Regular.ttf);
+  font-family: Roboto;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
-    font-family: Roboto;
-    font-weight: 700;
-    src: url(../fonts/Roboto-Bold.ttf);
+  font-family: Roboto;
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
 }
 
 body {
-    margin: 0;
-    
-    font: 18px/1.5 Roboto, sans-serif;
-    
-    color: $dark-gray;
- 
-    background-color: $dark;
- }
+  margin: 0;
 
- .container {
-    margin: 0 auto;
-    max-width: 1200px;
- }
+  font: 18px/1.5 Roboto, sans-serif;
 
- .flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-    &_align {
-        align-items: center;
+  color: $dark-gray;
+
+  background-color: $dark;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @include mobile {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @include mobile {
+    flex-direction: column;
+
+    &_reverse {
+      flex-direction: column-reverse;
     }
-    
+  }
+
+  &_align {
+    align-items: center;
+
+    @include mobile {
+      align-items: flex-start;
+    }
+  }
 }
 
 .icon {
-    margin-right: 16px;
-    height: 20px;
-    fill: white;
-    vertical-align: middle;
+  margin-right: 16px;
+  height: 20px;
+  // filter: invert(1);
+  vertical-align: middle;
 }

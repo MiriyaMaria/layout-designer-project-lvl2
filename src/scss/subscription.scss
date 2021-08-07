@@ -3,6 +3,11 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
         gap: 47px;
+
+        
+        @include mobile {
+           gap: 0; 
+        }
     }
 
     &_card {
@@ -34,27 +39,28 @@
         margin-top: 0;
         font-size: 16px;
     }
-}
 
-.free {
-    background-image: (url('../images/subscribe_1.png'));
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    background-size: cover;
-}
+    &_free {
+        background-image: (url('../images/subscribe_1.png'));
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-size: cover;
+    }
 
-.standard {
-    background-image: (url('../images/subscribe_2.png'));
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    background-size: cover;
-}
+    &_standard {
+        background-image: (url('../images/subscribe_2.png'));
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-size: cover;
+    }
+    
+    &_premium {
+        background-image: (url('../images/subscribe_3.png'));
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-size: cover;
+    }
 
-.premium {
-    background-image: (url('../images/subscribe_3.png'));
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    background-size: cover;
 }
 
 .currency {

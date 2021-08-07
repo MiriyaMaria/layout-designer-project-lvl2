@@ -22,6 +22,10 @@
             & > .footer_link {
                 display: inline-block;
             }
+
+            @include mobile {
+                flex-direction: column;
+            }
         }
 }
 

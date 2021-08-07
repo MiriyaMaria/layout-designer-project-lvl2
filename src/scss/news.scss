@@ -13,6 +13,11 @@
             font-weight: normal;
             font-size: 30px;
             line-height: 45px;
+
+            @include mobile {
+              font-size: 16px;
+              line-height: 24px;
+            }
         }
         
         &_text {
@@ -42,4 +47,8 @@
             margin-bottom: 65px;
         }
     }
+}
+
+.artist_photo {
+  max-width: 100%;
 }
