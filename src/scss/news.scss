@@ -4,6 +4,17 @@
         grid-template-columns: repeat(auto-fit, minmax(575px, 1fr));
         column-gap: 50px;
 
+        @include mobile {
+          grid-template-columns: 1fr;
+          row-gap: 50px;
+        }
+
+        &_reverse {
+          @include mobile {
+            grid-auto-flow: dense;
+          }
+        }
+
         &_body {
             text-align: left;
         }
@@ -50,5 +61,10 @@
 }
 
 .artist_photo {
-  max-width: 100%;
+  @include mobile {
+    width: 100%;
+    &_reverse {
+      grid-row-start: 1;
+    }
+  }
 }

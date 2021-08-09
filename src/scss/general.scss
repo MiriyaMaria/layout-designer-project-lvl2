@@ -38,8 +38,10 @@ body {
 
   @include mobile {
     flex-direction: column;
+  }
 
-    &_reverse {
+  &_reverse {
+    @include mobile {
       flex-direction: column-reverse;
     }
   }
