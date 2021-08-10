@@ -26,6 +26,7 @@
             line-height: 45px;
 
             @include mobile {
+              margin: 0 0 16px;
               font-size: 16px;
               line-height: 24px;
             }
@@ -34,11 +35,16 @@
         &_text {
             margin: 0 0 24px;
             font-size: 16px;
+
+            &:last-of-type {
+              margin: 0 0 16px;
+            }
         }
+
         &_author {
             display: flex;
             gap: 16px;
-            margin: 0 0 57px 0px;
+            margin: 0 0 48px 0px;
             font-size: 12px;
 
             &_link {
@@ -56,6 +62,10 @@
 
         &:not(:last-child) {
             margin-bottom: 65px;
+
+            @include mobile {
+              margin-bottom: 45px;
+            }
         }
     }
 }

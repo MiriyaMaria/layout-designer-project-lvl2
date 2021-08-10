@@ -1,70 +1,81 @@
 .subscription {
-    &_grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
-        gap: 47px;
+  &_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
+    gap: 47px;
 
-        
-        @include mobile {
-           gap: 0; 
-        }
+    // @include mobile {
+    //   gap: 40px;
+    // }
+  }
+
+  &_card {
+    min-width: 368px;
+    margin-bottom: 43px;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+
+    @include mobile {
+      margin-bottom: 0;
     }
 
-    &_card {
-        min-width: 368px;
-        margin-bottom: 43px;
-        padding: 0 1.5rem;
-        box-sizing: border-box;
-        border-radius: 1rem;
-
-        &_title {
-            margin: 24px 0 200px 0;
-            font-size: 24px;
-            text-transform: uppercase;
-        }
-
-        &_price {
-            margin: 0 0 40px 0;
-            font-size: 64px;
-            line-height: 1em;
-        }
-
-        &_text {
-            margin: 64px 0;
-            font-size: 13px;
-        }
-    }
-
-    &_description {
-        margin-top: 0;
+    &_title {
+      margin: 24px 0 200px 0;
+      font-size: 24px;
+      text-transform: uppercase;
+      @include mobile {
+        margin: 19px 0 190px 0;
         font-size: 16px;
+        font-weight: normal;
+      }
     }
 
-    &_free {
-        background-image: (url('../images/subscribe_1.png'));
-        background-repeat: no-repeat;
-        background-origin: border-box;
-        background-size: cover;
+    &_price {
+      margin: 0 0 40px 0;
+      font-size: 64px;
+      line-height: 1em;
     }
 
-    &_standard {
-        background-image: (url('../images/subscribe_2.png'));
-        background-repeat: no-repeat;
-        background-origin: border-box;
-        background-size: cover;
+    &_text {
+      margin: 64px 0;
+      font-size: 13px;
     }
-    
-    &_premium {
-        background-image: (url('../images/subscribe_3.png'));
-        background-repeat: no-repeat;
-        background-origin: border-box;
-        background-size: cover;
-    }
+  }
 
+  &_description {
+    margin-top: 0;
+    font-size: 16px;
+
+    @include mobile {
+      margin-top: 43px;
+    }
+  }
+
+  &_free {
+    background-image: (url("../images/subscribe_1.png"));
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+  }
+
+  &_standard {
+    background-image: (url("../images/subscribe_2.png"));
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+  }
+
+  &_premium {
+    background-image: (url("../images/subscribe_3.png"));
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+  }
 }
 
 .currency {
-    font-size: 32px;
-    text-transform: uppercase;
-    vertical-align: text-top;
-    }
+  font-size: 32px;
+  text-transform: uppercase;
+  vertical-align: text-top;
+}

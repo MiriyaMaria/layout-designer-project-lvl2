@@ -9,6 +9,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
             column-gap: 40px;
+            row-gap: 30px;
             padding-top: 3rem;
             padding-bottom: 4.5rem;
         }
@@ -35,6 +36,7 @@
 }
 
 .footer_title {
+    margin: 16px 0;
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
