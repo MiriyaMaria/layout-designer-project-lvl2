@@ -1,22 +1,28 @@
 .banner {
   position: relative;
+
   padding: 200px 0;
+
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
 
   &_title {
     margin: 0;
+
     font: bold 60px/90px Roboto, sans-serif;
     text-transform: uppercase;
 
     @include mobile {
       padding-top: 50px;
+
       font-size: 30px;
       line-height: 45px;
     }
+
     span {
       display: block;
+
       font: bold 38px/57px Roboto, sans-serif;
       text-transform: uppercase;
 
@@ -26,9 +32,11 @@
       }
     }
   }
+
   &_description {
     margin-top: 31px;
     margin-bottom: 17px;
+
     font-size: 16px;
 
     @include mobile {
@@ -38,8 +46,10 @@
     &_artist {
       margin-top: 16px;
       margin-bottom: 48px;
-      font-size: 16px;
+
       color: white;
+
+      font-size: 16px;
       text-align: left;
     }
   }
@@ -47,36 +57,53 @@
   &_artist {
     padding-top: 250px;
     padding-bottom: 230px;
+
     background-image: url("../images/Morten\ Harket.png");
+
+    @include mobile {
+      padding-top: 175px;
+    }
   }
 
   .btn {
     margin-left: 1.5rem;
 
-    &:first-of-type { 
-    margin-left: 0;
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    @include mobile {
+      margin-bottom: 1.5rem;
+      margin-left: 0;
     }
   }
 }
 
 .sign-up {
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  column-gap: 24px;
-  row-gap: 1.5rem;
+
+  max-width: 570px;
 
   margin: 0 auto;
-  max-width: 570px;
+
+  column-gap: 24px;
+  row-gap: 1.5rem;
 }
 
 .input-item {
+  box-sizing: border-box;
+
   min-width: 270px;
   min-height: 50px;
 
   padding: 0 20px;
-  box-sizing: border-box;
-  background: none;
+
   color: white;
+
+  background: none;
+
   border: 2px solid $dark-gray;
   border-radius: 3px;
 

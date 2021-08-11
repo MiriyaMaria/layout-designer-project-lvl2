@@ -1,16 +1,17 @@
 .section {
   padding-top: 100px;
+
   text-align: center;
 
   &_title {
     margin-top: 0;
     margin-bottom: 50px;
-    
-    font-size: 38px;
+
     font-weight: bold;
-    
-    text-transform: uppercase;
+    font-size: 38px;
+
     text-align: center;
+    text-transform: uppercase;
 
     @include mobile {
       font-size: 18px;
@@ -22,15 +23,19 @@
   }
 
   &_text {
-    margin-right: 144px;
-    text-align: left;
-    font-size: 16px;
-    line-height: 24px;
     width: 600px;
 
-    @include mobile {
-      margin-right: 0;
+    margin-right: 144px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    text-align: left;
+
+    @include tablet {
       width: 100%;
+
+      margin-right: 0;
     }
   }
 
@@ -40,8 +45,11 @@
 
   &_align {
     padding-top: 100px;
-    text-align: left;
+
     color: white;
+
+    text-align: left;
+
     &:last-child {
       margin-bottom: 100px;
     }
@@ -49,5 +57,6 @@
 
   &_image {
     max-width: 100%;
+    object-fit: contain;
   }
 }

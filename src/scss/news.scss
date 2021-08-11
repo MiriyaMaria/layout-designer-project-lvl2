@@ -1,78 +1,86 @@
 .news {
-    &_item {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(575px, 1fr));
-        column-gap: 50px;
+  &_item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(575px, 1fr));
 
-        @include mobile {
-          grid-template-columns: 1fr;
-          row-gap: 50px;
-        }
+    column-gap: 50px;
 
-        &_reverse {
-          @include mobile {
-            grid-auto-flow: dense;
-          }
-        }
-
-        &_body {
-            text-align: left;
-        }
-
-        &_title {
-            margin: 0 0 30px;
-            font-weight: normal;
-            font-size: 30px;
-            line-height: 45px;
-
-            @include mobile {
-              margin: 0 0 16px;
-              font-size: 16px;
-              line-height: 24px;
-            }
-        }
-        
-        &_text {
-            margin: 0 0 24px;
-            font-size: 16px;
-
-            &:last-of-type {
-              margin: 0 0 16px;
-            }
-        }
-
-        &_author {
-            display: flex;
-            gap: 16px;
-            margin: 0 0 48px 0px;
-            font-size: 12px;
-
-            &_link {
-                color: $orange;
-                text-transform: uppercase;
-                text-decoration: none;
-                
-                &:hover {
-                    color: white;
-
-                    transition: 1s;
-                }
-            }
-        }
-
-        &:not(:last-child) {
-            margin-bottom: 65px;
-
-            @include mobile {
-              margin-bottom: 45px;
-            }
-        }
+    @include tablet {
+      grid-template-columns: 1fr;
+      row-gap: 50px;
     }
+
+    &_reverse {
+      @include tablet {
+        grid-auto-flow: dense;
+      }
+    }
+
+    &_body {
+      text-align: left;
+    }
+
+    &_title {
+      margin: 0 0 30px;
+
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 45px;
+
+      @include mobile {
+        margin: 0 0 16px;
+
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    &_text {
+      margin: 0 0 24px;
+
+      font-size: 16px;
+
+      &:last-of-type {
+        margin: 0 0 16px;
+      }
+    }
+
+    &_author {
+      display: flex;
+      gap: 16px;
+
+      margin: 0 0 48px 0;
+
+      font-size: 12px;
+
+      &_link {
+        color: $orange;
+
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+          color: white;
+
+          transition: 1s;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 65px;
+
+      @include mobile {
+        margin-bottom: 45px;
+      }
+    }
+  }
 }
 
 .artist_photo {
-  @include mobile {
+  @include tablet {
     width: 100%;
+
     &_reverse {
       grid-row-start: 1;
     }

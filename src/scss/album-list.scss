@@ -1,37 +1,41 @@
 .list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 250px);
-    column-gap: 50px;
-    row-gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
 
-    @include mobile {
-        grid-template-columns: repeat(auto-fit, 137px);
-    }
+  column-gap: 50px;
+  row-gap: 25px;
+
+  @include mobile {
+    grid-template-columns: repeat(auto-fit, 137px);
+  }
 }
 
 .item_title {
-    margin-top: 15px;
-    margin-bottom: 0px;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 27px;
+  margin-top: 15px;
+  margin-bottom: 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 .item_description {
-    margin: 0;
-    color: $gray;
-    font-size: 16px;
-    line-height: 24px;
+  margin: 0;
+
+  color: $gray;
+
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .list_item_center {
-    text-align: center;
+  text-align: center;
 }
 
 .item_image {
-    width: 250px;
+  width: 250px;
 
-    @include mobile {
-        width: 137px;
-    }
+  @include mobile {
+    width: 137px;
+  }
 }
