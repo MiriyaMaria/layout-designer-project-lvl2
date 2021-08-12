@@ -1,7 +1,7 @@
 .subscription {
   &_grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(368px, 500px));
+    grid-template-columns: repeat(auto-fit, 368px);
     gap: 47px;
 
     @include tablet {

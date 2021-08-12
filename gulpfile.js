@@ -39,6 +39,12 @@ const images = (cb) => {
     .pipe(gulp.dest('./build/images'))
 }
 
+const scssTest = (cb) => {
+  return gulp.src('./src/scss/app.scss')
+    .pipe(sass())
+    .pipe(cssnano())
+    .pipe(gulp.dest('./src/css'))
+}
 
 const local = (cb) => {
   browserSync.init({
@@ -63,3 +69,5 @@ exports.local = gulp.series(
   fonts,
   local
 )
+
+exports.scss = scssTest;
