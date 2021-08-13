@@ -4,7 +4,7 @@
   padding: 200px 0;
 
   @include mini_tablet {
-    padding: 200px 0 175px;
+    padding: 250px 0 175px;
   }
 
   background-image: url("../images/banner.png");
@@ -18,8 +18,6 @@
     text-transform: uppercase;
 
     @include mobile {
-      padding-top: 50px;
-
       font-size: 30px;
       line-height: 45px;
     }
@@ -65,7 +63,8 @@
     background-image: url("../images/Morten\ Harket.png");
 
     @include mobile {
-      padding-top: 175px;
+      padding-top: 225px;
+      padding-bottom: 202px;
     }
   }
 
