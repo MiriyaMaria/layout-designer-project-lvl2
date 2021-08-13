@@ -37,7 +37,6 @@ body {
   flex-wrap: wrap;
 
   @include mini_tablet {
-    margin-top: -5px;
     flex-direction: column;
   }
 
@@ -61,6 +60,6 @@ body {
 
   margin-right: 16px;
 
-  // filter: invert(1);
+  filter: invert(1);
   vertical-align: middle;
 }
