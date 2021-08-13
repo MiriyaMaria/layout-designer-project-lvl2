@@ -37,6 +37,7 @@ body {
   flex-wrap: wrap;
 
   @include mini_tablet {
+    margin-top: -5px;
     flex-direction: column;
   }
 

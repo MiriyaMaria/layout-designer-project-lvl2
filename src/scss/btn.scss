@@ -20,7 +20,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
-    font-size: 14px;
+    font-size: 13.3px;
 
     background-color: $green;
 
@@ -57,7 +57,7 @@
     padding-top: 16px;
     padding-bottom: 16px;
 
-    font-size: 12px;
+    font-size: 12.8px;
 
     border: 2px solid $dark-gray;
 
@@ -65,6 +65,12 @@
       color: $orange;
 
       border-color: $orange;
+    }
+
+    &_last {
+      @include mini_tablet {
+        margin-bottom: 0;
+      }
     }
   }
 

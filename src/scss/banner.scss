@@ -3,6 +3,10 @@
 
   padding: 200px 0;
 
+  @include mini_tablet {
+    padding: 200px 0 175px;
+  }
+
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
