@@ -10,13 +10,16 @@
 <body>
     <header id="navigation" class="header">
         <div class="container flex flex_align">
-            <a  class="header_logo menu-item" href="#">music box</a>
-            <nav class="header_menu flex">
+            <div class="header_logo">
+                <img src="./images/logo.svg" alt="Иконка Music Box" class="logo">
+                <p  class="logo_text">music box</p>
+            </div>
+            <div class="header_menu flex">
                 <a class="menu-item" href="#">главная</a>
                 <a class="menu-item" href="#">каталог</a>
                 <a class="menu-item" href="#">исполнители</a>
                 <a class="menu-item" href="#">контакты</a>
-            </nav>
+            </div>
             <form action="" class="header_search">
                 <input type="search" class="header_search_window" placeholder="Поиск...">
             </form>
@@ -25,7 +28,8 @@
     <main>
         <section id="page-description" class="banner section">
             <div class="container">
-                <h1 class="banner_title">онлайн музыка где угодно <span>без ограничений</span></h1>
+                <h1 class="banner_title">онлайн музыка где угодно</h1>
+                <h2 class="banner_title_small">без ограничений</h2>
                 <p class="banner_description">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
                 <form action="" class="sign-up">
                     <input class="input-item" type="text" placeholder="Имя">
@@ -70,8 +74,8 @@
                         <p class="news_item_text">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</p>
                         <div class="news_item_author">
                             <img src="./images/avatar.png" alt="Аватар" class="news_item_author_avatar">
-                            <a  class="news_item_author_link" href="#">music box</a>
-                            <time class="date">17/01/2020</time>
+                            <p  class="news_item_author_link">music box</p>
+                            <p class="date">17/01/2020</p>
                         </div>
                         <a href="artist.html" class="btn btn_more">К альбому</a>
                     </div>
@@ -82,8 +86,8 @@
                         <p class="news_item_text news_item_text_last">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</p>
                         <div class="news_item_author">
                             <img src="./images/avatar.png" alt="Аватар" class="news_item_author_avatar">
-                            <a  class="news_item_author_link" href="#">music box</a>
-                            <time class="date">24/02/2020</time>
+                            <p  class="news_item_author_link">music box</p>
+                            <p class="date">24/02/2020</p>
                         </div>
                         <a href="artist.html" class="btn btn_more btn_more_last">К альбому</a>
                     </div>
@@ -110,25 +114,31 @@
             <div class="container footer_wrapper_up">
                 <div class="about">
                     <h3 class="footer_title">О нас</h3>
-                    <a href="#" class="footer_link">История компании</a>
-                    <a href="#" class="footer_link">Карьера</a>
-                    <a href="#" class="footer_link">Особенности</a>
-                    <a href="#" class="footer_link">Пресса</a>
+                    <div class="about_links">
+                        <a href="#" class="footer_link">История компании</a>
+                        <a href="#" class="footer_link">Карьера</a>
+                        <a href="#" class="footer_link">Особенности</a>
+                        <a href="#" class="footer_link">Пресса</a>
+                    </div>
                 </div>
                 <div class="support">
                     <h3 class="footer_title">Поддержка</h3>
-                    <a href="#" class="footer_link">База знаний</a>
-                    <a href="#" class="footer_link">Тарифы</a>
-                    <a href="#" class="footer_link">Мобильное приложение</a>
-                    <a href="#" class="footer_link">Условия использования</a>
+                    <div class="support_links">
+                        <a href="#" class="footer_link">База знаний</a>
+                        <a href="#" class="footer_link">Тарифы</a>
+                        <a href="#" class="footer_link">Мобильное приложение</a>
+                        <a href="#" class="footer_link">Условия использования</a>
+                    </div>
                 </div>
-                <div class="support">
+                <div class="contacts">
                     <h3 class="footer_title">Контакты</h3>
-                    <p class="contact_data">hello@music.box</p>
-                    <p class="contact_data">Russia, Moscow. Music Box studio</p>
-                    <p class="contact_data">+ 7 499 999 99 99</p>
+                    <div class="contacts_links">
+                        hello@music.box<br>
+                        Russia, Moscow. Music Box studio<br>
+                        + 7 499 999 99 99
+                    </div>
                 </div>
-                <div class="support">
+                <div class="social_media">
                     <h3 class="footer_title">Подписывайтесь</h3>
                     <div class="link_wrapper">
                         <a href="#" class="footer_link"><img src="./images/Google+.png" alt="Google+"></a>

@@ -54,21 +54,16 @@
       font-size: 12px;
 
       &_link {
+        margin: 0;
+
         color: $orange;
 
         text-transform: uppercase;
-        text-decoration: none;
-
-        &:hover {
-          color: white;
-
-          transition: 1s;
-        }
       }
     }
 
     &:not(:last-child) {
-      margin-bottom: 65px;
+      margin-bottom: 64px;
 
       @include mobile {
         margin-bottom: 45px;
@@ -78,11 +73,15 @@
 }
 
 .artist_photo {
-  @include tablet {
+   @include tablet {
     width: 100%;
 
     &_reverse {
       grid-row-start: 1;
     }
   }
+}
+
+.date {
+  margin: 0;
 }

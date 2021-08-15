@@ -4,7 +4,7 @@
   padding: 200px 0;
 
   @include mini_tablet {
-    padding: 250px 0 175px;
+    padding: 250px 0 180px;
   }
 
   background-image: url("../images/banner.png");
@@ -22,10 +22,11 @@
       line-height: 45px;
     }
 
-    span {
-      display: block;
+    &_small {
+      margin: 0;
 
       font: bold 38px/57px Roboto, sans-serif;
+      line-height: 57px;
       text-transform: uppercase;
 
       @include mobile {
@@ -36,8 +37,8 @@
   }
 
   &_description {
-    margin-top: 31px;
-    margin-bottom: 17px;
+    margin-top: 32px;
+    margin-bottom: 18px;
 
     font-size: 16px;
 
