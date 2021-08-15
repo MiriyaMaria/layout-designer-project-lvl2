@@ -13,7 +13,6 @@
 
   &_menu {
     @include mini_tablet {
-
       padding-top: 17px;
       padding-bottom: 18px;
     }
@@ -68,6 +67,10 @@
   &:hover {
     color: $orange;
   }
+
+  @include mini_tablet {
+    font-weight: bold;
+  }
 }
 
 .logo {
@@ -84,13 +87,25 @@
 
     text-transform: uppercase;
     text-decoration: none;
+
+    @include mini_tablet {
+      font-weight: bold;
+      font-size: 11px;
+    }
   }
 }
 
 .menu {
   margin: 0;
   padding: 0;
-  gap: 24px;
-
+  
   list-style: none;
+
+  @include mini_tablet {
+    gap: 0;
+  }
+
+  &>li {
+    margin-right: 24px;
+  }
 }
