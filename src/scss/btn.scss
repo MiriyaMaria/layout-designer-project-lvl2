@@ -79,10 +79,13 @@
     padding: 16px 40px;
 
     font-size: 12.8px;
+    line-height: 19.2px;
 
     background-color: $red;
 
     border-radius: 32px;
+
+    text-transform: none;
 
     &:hover {
       color: $orange;

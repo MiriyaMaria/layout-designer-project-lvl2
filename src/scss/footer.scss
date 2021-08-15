@@ -3,7 +3,9 @@
 }
 
 .footer_link {
-  display: block;
+  display: flex;
+
+  align-items: center;
 
   color: $gray;
 
@@ -14,7 +16,7 @@
 }
 
 .footer_wrapper {
-  border-top: 1px solid $dark-gray;
+  border-top: 2px solid $dark-gray;
 
   &_up {
     display: grid;
@@ -25,6 +27,13 @@
 
     column-gap: 40px;
     row-gap: 30px;
+
+    & ul {
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+    }
 
     @include mini_tablet {
       padding-top: 3rem;
@@ -51,6 +60,8 @@
 .link_wrapper {
   display: flex;
   gap: 24px;
+
+  margin-top: 23px;
 }
 
 .footer_title {
@@ -77,4 +88,8 @@
 
   font-size: 16px;
   line-height: 24px;
+
+  &>p {
+    margin: 0;
+  }
 }
