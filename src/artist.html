@@ -8,14 +8,19 @@
     <title>Портал «Music Box» Мария Чурилова</title>
 </head>
 <body>
-    <header id="navigation" class="header">
+    <header id="navigation" class="header header_artist">
         <div class="container flex flex_align">
-            <a  class="header_logo menu-item" href="index.html">music box</a>
-            <nav class="header_menu flex">
-                <a class="menu-item" href="#">главная</a>
-                <a class="menu-item" href="#">каталог</a>
-                <a class="menu-item" href="#">исполнители</a>
-                <a class="menu-item" href="#">контакты</a>
+            <div class="header_logo">
+                <img src="./images/logo.svg" alt="Иконка Music Box" class="logo">
+                <p  class="logo_text artist_page">music box</p>
+            </div>
+            <nav class="header_menu ">
+                <ul class="menu flex">
+                    <li><a class="menu-item artist_page" href="#">главная</a></li>
+                    <li><a class="menu-item artist_page" href="#">каталог</a></li>
+                    <li><a class="menu-item artist_page" href="#">исполнители</a></li>
+                    <li><a class="menu-item artist_page" href="#">контакты</a></li>
+                </ul>
             </nav>
             <form action="" class="header_search">
                 <input type="search" class="header_search_window" placeholder="Поиск...">
@@ -27,8 +32,10 @@
             <div class="container">
                 <h1 class="banner_title">Morten Harket</h1>
                 <p class="banner_description_artist">24 875 поклонников</p>
-                <a href="#" class="btn btn_mix btn_blue"> <img class="icon" src="./images/play-button.svg" alt="Иконка">Микс</a>
-                <a href="#" class="btn btn_mix btn_red"><img class="icon" src="./images/heart.svg" alt="Иконка">В избранное</a>
+                <form action="">
+                    <button class="btn btn_mix btn_blue"><img class="icon" src="./images/play-button.svg" alt="Иконка">Микс</button>
+                    <button class="btn btn_mix btn_red"><img class="icon" src="./images/heart.svg" alt="Иконка">В избранное</button>
+                </form>
             </div>
         </section>
         <section id="page-popular-track" class="section_align">
@@ -38,42 +45,42 @@
                     <div class="popular_track flex">
                         <img class="album" src="./images/Wild Seed.png" alt="Обложка альбома">
                         <div class="track_info flex">
-                            <div class=""><h3 class="album_title">Spanish Step</h3><span class="artist_name">Morten Harket</span></div>
+                            <div class="track_name"><h3 class="album_title">Spanish Step</h3><span class="artist_name">Morten Harket</span></div>
                             <div class="time">4:07</div>
                         </div>
                     </div>
                     <div class="popular_track flex">
                         <img class="album" src="./images/Letter from Egypt.png" alt="Обложка альбома">
                         <div class="track_info flex">
-                            <div class="track_name">With You - With Me <span class="artist_name">Morten Harket</span></div>
+                            <div class="track_name"><h3 class="album_title">With You - With Me</h3><span class="artist_name">Morten Harket</span></div>
                             <div class="time">3:48</div>
                         </div>
                     </div>
                     <div class="popular_track flex">
                         <img class="album" src="./images/Brother.png" alt="Обложка альбома">
                         <div class="track_info flex">
-                            <div class="track_name">Brother <span class="artist_name">Morten Harket</span></div>
+                            <div class="track_name"><h3 class="album_title">Brother</h3><span class="artist_name">Morten Harket</span></div>
                             <div class="time">5:05</div>
                         </div>
                     </div>
                     <div class="popular_track flex">
                         <img class="album" src="./images/Wild Seed.png" alt="Обложка альбома">
                         <div class="track_info flex">
-                            <div class="track_name">Brodsky Tune <span class="artist_name">Morten Harket</span></div>
+                            <div class="track_name"><h3 class="album_title">Brodsky Tune</h3><span class="artist_name">Morten Harket</span></div>
                             <div class="time">4:24</div>
                         </div>
                     </div>
                     <div class="popular_track flex">
                         <img class="album" src="./images/Letter from Egypt.png" alt="Обложка альбома">
                         <div class="track_info flex">
-                            <div class="track_name">Darkspace <span class="artist_name">Morten Harket</span></div>
+                            <div class="track_name"><h3 class="album_title">Darkspace</h3><span class="artist_name">Morten Harket</span></div>
                             <div class="time">3:45</div>
                         </div>
                     </div>
                     <div class="popular_track flex">
                         <img class="album" src="./images/Out of My Hands.png" alt="Обложка альбома">
                         <div class="track_info flex">
-                            <div class="track_name">Burn Money Burn <span class="artist_name">Morten Harket</span></div>
+                            <div class="track_name"><h3 class="album_title">Burn Money Burn</h3><span class="artist_name">Morten Harket</span></div>
                             <div class="time">3:52</div>
                         </div>
                     </div>
@@ -168,27 +175,33 @@
     <footer class="bg-gradient">
         <div>
             <div class="container footer_wrapper_up">
-                <div class="about">
+                <nav class="about">
                     <h3 class="footer_title">О нас</h3>
-                    <a href="#" class="footer_link">История компании</a>
-                    <a href="#" class="footer_link">Карьера</a>
-                    <a href="#" class="footer_link">Особенности</a>
-                    <a href="#" class="footer_link">Пресса</a>
-                </div>
-                <div class="support">
+                    <ul class="about_links">
+                        <li><a href="#" class="footer_link">История компании</a></li>
+                        <li><a href="#" class="footer_link">Карьера</a></li>
+                        <li><a href="#" class="footer_link">Особенности</a></li>
+                        <li><a href="#" class="footer_link">Пресса</a></li>
+                    </ul>
+                </nav>
+                <nav class="support">
                     <h3 class="footer_title">Поддержка</h3>
-                    <a href="#" class="footer_link">База знаний</a>
-                    <a href="#" class="footer_link">Тарифы</a>
-                    <a href="#" class="footer_link">Мобильное приложение</a>
-                    <a href="#" class="footer_link">Условия использования</a>
-                </div>
-                <div class="support">
+                    <ul class="support_links">
+                        <li><a href="#" class="footer_link">База знаний</a></li>
+                        <li><a href="#" class="footer_link">Тарифы</a></li>
+                        <li><a href="#" class="footer_link">Мобильное приложение</a></li>
+                        <li><a href="#" class="footer_link">Условия использования</a></li>
+                    </ul>
+                </nav>
+                <div class="contacts">
                     <h3 class="footer_title">Контакты</h3>
-                    <p class="contact_data">hello@music.box</p>
-                    <p class="contact_data">Russia, Moscow. Music Box studio</p>
-                    <p class="contact_data">+ 7 499 999 99 99</p>
+                    <div class="contacts_links">
+                        <a src="#" alt="Email">hello@music.box</a><br>
+                        <p>Russia, Moscow. Music Box studio</p>
+                        <a src="#" alt="Телефон">+ 7 499 999 99 99</a>
+                    </div>
                 </div>
-                <div class="support">
+                <div class="social_media">
                     <h3 class="footer_title">Подписывайтесь</h3>
                     <div class="link_wrapper">
                         <a href="#" class="footer_link"><img src="./images/Google+.png" alt="Google+"></a>
@@ -207,7 +220,7 @@
                 <a href="#" class="footer_link">Поддержка</a>
                 <a href="#" class="footer_link">Контакты</a>
             </div>
-        </div>
+        </div>         
     </footer>
 </body>
 </html>

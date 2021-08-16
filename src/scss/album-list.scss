@@ -6,12 +6,12 @@
   row-gap: 25px;
 
   @include mobile {
-    grid-template-columns: repeat(auto-fit, 137px);
+    grid-template-columns: repeat(auto-fit, 138px);
   }
 }
 
 .item_title {
-  margin-top: 12px;
+  margin-top: 11px;
   margin-bottom: 0;
 
   font-weight: bold;
@@ -43,6 +43,13 @@
 .album_title {
   margin: 0;
 
-  font-weight: normal;
+  font-weight: bold;
+  font-size: 12.8px;
   text-transform: uppercase;
+}
+
+.time {
+  @include mobile {
+    margin-right: 7px;
+  }
 }

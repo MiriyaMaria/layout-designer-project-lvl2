@@ -53,6 +53,10 @@
 
       font-size: 12px;
 
+      @include mini_tablet {
+        margin: 0 0 45px 0;
+      }
+
       &_link {
         margin: 0;
 

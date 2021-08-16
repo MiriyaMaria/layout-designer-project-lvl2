@@ -6,6 +6,10 @@
   width: 100%;
   height: 25px;
 
+  &_artist {
+    top: 22px;
+  }
+
   &_logo {
     display: flex;
     align-items: center;
@@ -105,4 +109,9 @@
   &>li {
     margin-right: 24px;
   }
+}
+
+.artist_page {
+  font-weight: bold;
+  font-size: 11px;
 }
