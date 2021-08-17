@@ -81,11 +81,11 @@
     font-size: 12.8px;
     line-height: 19.2px;
 
+    text-transform: none;
+
     background-color: $red;
 
     border-radius: 32px;
-
-    text-transform: none;
 
     &:hover {
       color: $orange;
@@ -97,15 +97,16 @@
   &_mix {
     display: inline-block;
 
-    text-align: left;
     align-items: center;
 
     width: 200px;
     height: 62px;
-    
+
     padding: 20px 31px;
 
     font-size: 12.8px;
+
+    text-align: left;
 
     border: 2px solid transparent;
 

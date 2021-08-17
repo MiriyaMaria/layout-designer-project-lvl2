@@ -3,4 +3,3 @@ build
 package-lock.json
 src/scss/banner_2.scss
 src/scss/header_2.scss
-src/scss/subscription_2.scss
