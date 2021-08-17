@@ -43,6 +43,7 @@ body {
   &_reverse {
     @include tablet {
       flex-direction: column-reverse;
+      align-items: center;
     }
   }
 
