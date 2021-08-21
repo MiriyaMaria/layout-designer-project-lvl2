@@ -41,7 +41,7 @@
 
     font-size: 16px;
 
-    border: 2px solid $dark-gray;
+    border: 1px solid $dark-gray;
 
     &:hover {
       color: $orange;
@@ -76,10 +76,9 @@
 
   &_download {
     display: inline-block;
-    padding: 16px 40px;
+    padding: 12px 40px;
 
     font-size: 12.8px;
-    line-height: 19.2px;
 
     text-transform: none;
 
