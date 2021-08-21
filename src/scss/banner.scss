@@ -64,33 +64,14 @@
   }
 
   &_artist {
-    padding-top: 200px;
-    padding-bottom: 200px;
-
+    padding: 200px 0;
 
     background-image: url("../images/Morten\ Harket.png");
-
-    @include mobile {
-      padding-top: 200px;
-      padding-bottom: 200px;
-    }
   }
 
   .btn {
-    margin-bottom: 24px;
-
-    &:first-child {
       margin-right: 1.2rem;
-    }
-
-    @include mobile {
-      &:first-child {
-        margin-right: 0;
-      }
-    }
-    @include mobile {
-      margin-bottom: 0;
-    }
+      margin-bottom: 20px;
   }
 }
 
@@ -103,8 +84,8 @@
 
   margin: 0 auto;
 
-  column-gap: 24px;
-  row-gap: 1.5rem;
+  column-gap: 25px;
+  row-gap: 25px;
 }
 
 .input-item {
