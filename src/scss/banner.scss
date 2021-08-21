@@ -86,8 +86,10 @@
     @include mobile {
       &:first-child {
         margin-right: 0;
-        margin-bottom: 0;
       }
+    }
+    @include mobile {
+      margin-bottom: 0;
     }
   }
 }

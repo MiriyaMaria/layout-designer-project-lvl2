@@ -36,8 +36,8 @@
     }
 
     @include mini_tablet {
-      padding-top: 45px;
-      padding-bottom: 68px;
+      padding-top: 63px;
+      padding-bottom: 66px;
     }
   }
 
@@ -45,8 +45,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 40px;
+    padding-bottom: 50px;
 
     font-size: 16px;
 
@@ -56,9 +56,8 @@
 
     @include mobile {
       flex-direction: column;
-
       padding-right: 39px;
-      padding-bottom: 72px;
+      padding-bottom: 47px;
     }
   }
 }
@@ -68,15 +67,15 @@
   align-items: center;
   gap: 24px;
 
-  margin-top: 0;
+  margin-top: 18px;
 
   @include mini_tablet {
-    margin-top: 19px;
+    margin-top: 20px;
   }
 }
 
 .footer_title {
-  margin-top: 2px;
+  margin-top: 0;
   margin-bottom: 15px;
 
   color: white;
@@ -86,16 +85,6 @@
   line-height: 27px;
 
   text-transform: uppercase;
-
-  @include mini_tablet {
-    margin-top: 0;
-  }
-}
-
-.about > .footer_title {
-  @include mobile {
-    margin-top: 20px;
-  }
 }
 
 .contacts_links {
