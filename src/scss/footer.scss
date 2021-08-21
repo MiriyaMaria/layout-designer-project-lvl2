@@ -36,8 +36,8 @@
     }
 
     @include mini_tablet {
-      padding-top: 3rem;
-      padding-bottom: 67px;
+      padding-top: 45px;
+      padding-bottom: 68px;
     }
   }
 
@@ -56,7 +56,9 @@
 
     @include mobile {
       flex-direction: column;
-      padding-bottom: 2.8rem;
+
+      padding-right: 39px;
+      padding-bottom: 72px;
     }
   }
 }
@@ -69,7 +71,7 @@
   margin-top: 0;
 
   @include mini_tablet {
-    margin-top: 18px;
+    margin-top: 19px;
   }
 }
 
@@ -84,11 +86,15 @@
   line-height: 27px;
 
   text-transform: uppercase;
+
+  @include mini_tablet {
+    margin-top: 0;
+  }
 }
 
 .about > .footer_title {
   @include mobile {
-    margin-top: 16px;
+    margin-top: 20px;
   }
 }
 
