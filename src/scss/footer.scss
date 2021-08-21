@@ -18,8 +18,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 
-    padding-top: 4rem;
-    padding-bottom: 4.5rem;
+    padding-top: 60px;
+    padding-bottom: 70px;
 
     column-gap: 40px;
     row-gap: 30px;
@@ -48,6 +48,8 @@
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 
+    font-size: 16px;
+
     & > .footer_link {
       display: inline-block;
     }
@@ -64,7 +66,7 @@
   align-items: center;
   gap: 24px;
 
-  margin-top: 23px;
+  margin-top: 0;
 
   @include mini_tablet {
     margin-top: 18px;
