@@ -56,7 +56,6 @@
 
     @include mobile {
       flex-direction: column;
-      padding-right: 39px;
       padding-bottom: 47px;
     }
   }
@@ -78,13 +77,11 @@
 
   font-weight: bold;
   font-size: 18px;
-  line-height: 27px;
+  
 
   text-transform: uppercase;
 
-  @include mini_tablet {
-    margin-top: 1px;
-  }
+  
 }
 
 // .about > .footer_title {

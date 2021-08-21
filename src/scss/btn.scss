@@ -76,7 +76,7 @@
 
   &_download {
     display: inline-block;
-    padding: 12px 40px;
+    padding: 16px 40px;
 
     font-size: 12.8px;
 
@@ -86,12 +86,8 @@
 
     border-radius: 32px;
 
-    border: 2px solid transparent;
-
     &:hover {
       color: $orange;
-
-      border-color: $orange;
     }
   }
 
