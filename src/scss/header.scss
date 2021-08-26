@@ -1,12 +1,12 @@
 .header {
   position: absolute;
-  top: 25px;
+  top: px-to-rem(25px);
   z-index: 1;
 
   width: 100%;
 
   &_artist {
-    top: 22px;
+    top: px-to-rem(22px);
   }
 
   &_logo {
@@ -16,8 +16,8 @@
 
   &_menu {
     @include mini_tablet {
-      padding-top: 16px;
-      padding-bottom: 14px;
+      padding-top: px-to-rem(16px);
+      padding-bottom: px-to-rem(14px);
     }
   }
 
@@ -31,14 +31,14 @@
     }
 
     &_window {
-      width: 248px;
-      height: 25px;
+      width: px-to-rem(248px);
+      height: px-to-rem(25px);
 
-      padding: 5px 0 5px 10px;
+      padding: px-to-rem(5px 0px 5px 10px);
 
       color: white;
 
-      font-size: 14px;
+      font-size: px-to-rem(14px);
       line-height: 1.2;
       text-transform: uppercase;
 
@@ -46,7 +46,7 @@
 
       border: none;
 
-      border-radius: 50px;
+      border-radius: px-to-rem(50px);
 
       &:focus {
         outline: none;
@@ -59,41 +59,24 @@
   }
 }
 
-.menu-item {
-  color: $dark-gray;
-
-  font-size: 11px;
-
-  text-transform: uppercase;
-  text-decoration: none;
-
-  &:hover {
-    color: $orange;
-  }
-
-  @include mini_tablet {
-    font-weight: bold;
-  }
-}
-
 .logo {
-  width: 24px;
-  height: 24px;
+  width: px-to-rem(24px);
+  height: px-to-rem(24px);
 
   &_text {
     display: inline-block;
-    margin: 0 91px 0 16px;
+    margin: px-to-rem(0px 91px 0px 16px);
 
     color: $dark-gray;
 
-    font-size: 10px;
+    font-size: px-to-rem(10px);
 
     text-transform: uppercase;
     text-decoration: none;
 
     @include mini_tablet {
       font-weight: bold;
-      font-size: 11px;
+      font-size: px-to-rem(11px);
     }
   }
 }
@@ -107,11 +90,32 @@
   & > li {
     display: flex;
 
-    margin-right: 24px;
+    margin-right: px-to-rem(24px);
+  }
+
+  &_item {
+    color: $dark-gray;
+  
+    font-size: px-to-rem(11px);
+  
+    text-transform: uppercase;
+    text-decoration: none;
+  
+    &:hover {
+      color: $orange;
+    }
+  
+    @include mini_tablet {
+      font-weight: bold;
+    }
   }
 }
 
 .artist_page {
   font-weight: bold;
-  font-size: 11px;
+  font-size: px-to-rem(11px);
+
+  &:hover {
+    color: $orange;
+  }
 }

@@ -15,19 +15,20 @@ body {
 
   color: $dark-gray;
 
-  font: 18px/1.5 Roboto, sans-serif;
+  font: px-to-rem(18px)/1.5 Roboto, sans-serif;
 
   background-color: $dark;
 }
 
 .container {
+  z-index: 1;
   box-sizing: border-box;
 
   width: 100%;
-  max-width: 1240px;
+  max-width: px-to-rem(1240px);
 
   margin: 0 auto;
-  padding: 0 20px;
+  padding: px-to-rem(0px 20px);
 }
 
 .flex {
@@ -56,9 +57,9 @@ body {
 }
 
 .icon {
-  height: 20px;
+  height: px-to-rem(20px);
 
-  margin-right: 16px;
+  margin-right: px-to-rem(16px);
 
   vertical-align: middle;
 

@@ -1,13 +1,13 @@
 .news {
   &_item {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(575px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(px-to-rem(575px), 1fr));
 
-    column-gap: 50px;
+    column-gap: px-to-rem(50px);
 
     @include tablet {
       grid-template-columns: 1fr;
-      row-gap: 50px;
+      row-gap: px-to-rem(50px);
     }
 
     &_reverse {
@@ -21,42 +21,42 @@
     }
 
     &_title {
-      margin: 0 0 30px;
+      margin: px-to-rem(0px 0px 30px);
 
       font-weight: normal;
-      font-size: 30px;
-      line-height: 45px;
+      font-size: px-to-rem(30px);
+      line-height: px-to-rem(45px);
 
       text-transform: capitalize;
 
       @include mobile {
-        margin: 0 0 16px;
+        margin: px-to-rem(0px 0px 16px);
 
-        font-size: 16px;
-        line-height: 24px;
+        font-size: px-to-rem(16px);
+        line-height: px-to-rem(24px);
       }
     }
 
     &_text {
-      margin: 0 0 24px;
+      margin: px-to-rem(0px 0px 24px);
 
-      font-size: 16px;
+      font-size: px-to-rem(16px);
 
       &_last {
-        margin: 0 0 16px;
+        margin: px-to-rem(0px 0px 16px);
       }
     }
 
     &_author {
       display: flex;
-      gap: 16px;
+      gap: px-to-rem(16px);
 
-      margin: 0 0 46px 0;
+      margin: px-to-rem(0px 0px 46px 0px);
 
-      font-size: 12px;
+      font-size: px-to-rem(12px);
 
       @include mini_tablet {
-        margin: 0 0 45px 0;
+        margin: px-to-rem(0px 0px 45px 0px);
       }
 
       &_link {
@@ -69,16 +69,16 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: 64px;
+      margin-bottom: px-to-rem(64px);
 
       @include mobile {
-        margin-bottom: 45px;
+        margin-bottom: px-to-rem(45px);
       }
     }
   }
 }
 
-.artist_photo {
+.news_photo {
   @include tablet {
     width: 100%;
 

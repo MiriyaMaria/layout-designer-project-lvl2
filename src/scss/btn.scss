@@ -1,8 +1,8 @@
 .btn {
   box-sizing: border-box;
 
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: px-to-rem(30px);
+  padding-left: px-to-rem(30px);
 
   color: white;
   text-transform: uppercase;
@@ -10,17 +10,17 @@
 
   border: none;
 
-  border-radius: 5px;
+  border-radius: px-to-rem(5px);
 
   transition: background-color 1s, color 1s, border-color 1s;
 
   &_submit {
     grid-column-start: 1;
     grid-column-end: -1;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: px-to-rem(20px);
+    padding-bottom: px-to-rem(20px);
 
-    font-size: 13.3px;
+    font-size: px-to-rem(13.3px);
 
     background-color: $green;
 
@@ -36,12 +36,12 @@
   &_sub {
     display: block;
 
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: px-to-rem(20px);
+    padding-bottom: px-to-rem(20px);
 
-    font-size: 16px;
+    font-size: px-to-rem(16px);
 
-    border: 1px solid $dark-gray;
+    border: px-to-rem(1px) solid $dark-gray;
 
     &:hover {
       color: $orange;
@@ -53,13 +53,13 @@
   &_more {
     display: inline-block;
 
-    margin-bottom: 20px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-bottom: px-to-rem(20px);
+    padding-top: px-to-rem(16px);
+    padding-bottom: px-to-rem(16px);
 
-    font-size: 12.8px;
+    font-size: px-to-rem(12.8px);
 
-    border: 2px solid $dark-gray;
+    border: px-to-rem(2px) solid $dark-gray;
 
     &:hover {
       color: $orange;
@@ -76,15 +76,15 @@
 
   &_download {
     display: inline-block;
-    padding: 16px 40px;
+    padding: px-to-rem(16px 40px);
 
-    font-size: 12.8px;
+    font-size: px-to-rem(12.8px);
 
     text-transform: none;
 
     background-color: $red;
 
-    border-radius: 32px;
+    border-radius: px-to-rem(32px);
 
     &:hover {
       color: $orange;
@@ -96,16 +96,16 @@
 
     align-items: center;
 
-    width: 200px;
-    height: 62px;
+    width: px-to-rem(200px);
+    height: px-to-rem(62px);
 
-    padding: 20px 30px;
+    padding: px-to-rem(20px 30px);
 
-    font-size: 12.8px;
+    font-size: px-to-rem(12.8px);
 
     text-align: left;
 
-    border: 2px solid transparent;
+    border: px-to-rem(2px) solid transparent;
 
     &:hover {
       border-color: $orange;

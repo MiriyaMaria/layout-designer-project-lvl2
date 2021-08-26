@@ -1,24 +1,33 @@
 .list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 250px);
+  grid-template-columns: repeat(auto-fit, px-to-rem(250px));
 
-  column-gap: 50px;
-  row-gap: 25px;
+  column-gap: px-to-rem(50px);
+  row-gap: px-to-rem(25px);
 
   @include mobile {
-    grid-template-columns: repeat(auto-fit, 138px);
+    grid-template-columns: repeat(auto-fit, px-to-rem(138px));
   }
 }
 
 .item_title {
-  margin-top: 11px;
+  margin-top: px-to-rem(11px);
   margin-bottom: 0;
 
   font-weight: bold;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: px-to-rem(18px);
+  line-height: px-to-rem(27px);
 
   text-transform: capitalize;
+
+  & > a {
+    color: white;
+    text-decoration: none;
+ 
+    &:hover {
+      color: $orange;
+    }
+  }
 }
 
 .item_description {
@@ -26,8 +35,8 @@
 
   color: $gray;
 
-  font-size: 16px;
-  line-height: 24px;
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(24px);
 }
 
 .list_item_center {
@@ -35,10 +44,10 @@
 }
 
 .item_image {
-  width: 250px;
+  width: px-to-rem(250px);
 
   @include mobile {
-    width: 137px;
+    width: px-to-rem(137px);
   }
 }
 
@@ -46,12 +55,21 @@
   margin: 0;
 
   font-weight: bold;
-  font-size: 12.8px;
+  font-size: px-to-rem(12.8px);
   text-transform: uppercase;
+
+  & > a {
+   color: white;
+   text-decoration: none;
+
+   &:hover {
+     color: $orange;
+   }
+  }
 }
 
 .time {
   @include mobile {
-    margin-right: 7px;
+    margin-right: px-to-rem(7px);
   }
 }

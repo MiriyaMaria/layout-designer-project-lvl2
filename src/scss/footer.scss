@@ -6,23 +6,27 @@
   color: $gray;
 
   font-size: inherit;
-  line-height: 24px;
+  line-height: px-to-rem(24px);
 
   text-decoration: none;
+
+  &:hover {
+    color: $orange;
+  }
 }
 
 .footer_wrapper {
-  border-top: 2px solid $dark-gray;
+  border-top: px-to-rem(2px) solid $dark-gray;
 
   &_up {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(px-to-rem(270px), 1fr));
 
-    padding-top: 62px;
-    padding-bottom: 70px;
+    padding-top: px-to-rem(62px);
+    padding-bottom: px-to-rem(70px);
 
-    column-gap: 40px;
-    row-gap: 31px;
+    column-gap: px-to-rem(40px);
+    row-gap: px-to-rem(31px);
 
     & ul {
       margin: 0;
@@ -31,24 +35,24 @@
       list-style: none;
 
       & li {
-        font-size: 16px;
+        font-size: px-to-rem(16px);
       }
     }
 
     @include mini_tablet {
-      padding-top: 63px;
-      padding-bottom: 66px;
+      padding-top: px-to-rem(63px);
+      padding-bottom: px-to-rem(66px);
     }
   }
 
   &_down {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
-    padding-top: 40px;
-    padding-bottom: 50px;
+    gap: px-to-rem(16px);
+    padding-top: px-to-rem(40px);
+    padding-bottom: px-to-rem(50px);
 
-    font-size: 16px;
+    font-size: px-to-rem(16px);
 
     & > .footer_link {
       display: inline-block;
@@ -56,50 +60,47 @@
 
     @include mobile {
       flex-direction: column;
-      padding-bottom: 47px;
+      padding-bottom: px-to-rem(47px);
     }
   }
 }
 
 .link_wrapper {
   display: flex;
-  gap: 24px;
+  gap: px-to-rem(24px);
   align-items: center;
 
-  margin-top: 18px;
+  margin-top: px-to-rem(18px);
 }
 
 .footer_title {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: px-to-rem(15px);
 
   color: white;
 
   font-weight: bold;
-  font-size: 18px;
+  font-size: px-to-rem(18px);
 
   text-transform: uppercase;
 }
 
-// .about > .footer_title {
-//   @include mobile {
-//     margin-top: 0;
-//   }
-// }
-
 .contacts_links {
   margin: 0;
 
-  font-size: 16px;
-  line-height: 24px;
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(24px);
 
   & > p {
     margin: 0;
   }
-}
 
-// .social_media {
-//   @include mini_tablet {
-//     margin-top: 6px;
-//   }
-// }
+  & > a {
+    color: $gray;;
+    text-decoration: none;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}

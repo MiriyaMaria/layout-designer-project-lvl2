@@ -1,7 +1,7 @@
 .banner {
   position: relative;
 
-  padding: 200px 0;
+  padding: px-to-rem(200px 0px);
 
   background-image: url("../images/banner.png");
   background-position: center;
@@ -10,67 +10,78 @@
   &_title {
     margin: 0;
 
-    font: bold 60px/90px Roboto, sans-serif;
+    font: bold px-to-rem(60px)/px-to-rem(90px) Roboto, sans-serif;
     text-transform: uppercase;
 
     &_artist {
-      margin-top: 50px;
+      margin-top: px-to-rem(50px);
     }
 
     @include mobile {
-      margin-top: 48px;
+      margin-top: px-to-rem(48px);
 
-      font-size: 30px;
-      line-height: 45px;
+      font-size: px-to-rem(30px);
+      line-height: px-to-rem(45px);
 
       &_artist {
-        margin-top: 25px;
+        margin-top: px-to-rem(25px);
       }
     }
 
     &_small {
       margin: 0;
 
-      font: bold 38px/57px Roboto, sans-serif;
-      line-height: 57px;
+      font: bold px-to-rem(38px)/px-to-rem(57px) Roboto, sans-serif;
       text-transform: uppercase;
 
       @include mobile {
-        font-size: 18px;
-        line-height: 27px;
+        font-size: px-to-rem(18px);
+        line-height: px-to-rem(27px);
       }
     }
   }
 
   &_description {
-    margin-top: 32px;
-    margin-bottom: 18px;
+    margin-top: px-to-rem(32px);
+    margin-bottom: px-to-rem(18px);
 
-    font-size: 16px;
+    font-size: px-to-rem(16px);
 
     @include mobile {
-      margin-top: 16px;
+      margin-top: px-to-rem(16px);
     }
 
     &_artist {
-      margin-top: 16px;
-      margin-bottom: 48px;
+      margin-top: px-to-rem(16px);
+      margin-bottom: px-to-rem(48px);
 
       color: white;
 
-      font-size: 16px;
+      font-size: px-to-rem(16px);
       text-align: left;
     }
   }
 
   &_artist {
-    padding: 200px 0;
+    position: relative;
+    z-index: 0;
+    padding: px-to-rem(200px 0px);
 
-    background-image: url("../images/Morten\ Harket.png");
+    &_background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+
+      width: 100%;
+    }
+    // background-image: url("../images/morten_harket.png");
 
     .btn {
       margin-right: 1.2rem;
-      margin-bottom: 20px;
+      margin-bottom: px-to-rem(20px);
     }
   }
 }
@@ -78,30 +89,30 @@
 .sign-up {
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(px-to-rem(270px), 1fr));
 
-  max-width: 570px;
+  max-width: px-to-rem(570px);
 
   margin: 0 auto;
 
-  column-gap: 25px;
-  row-gap: 25px;
+  column-gap: px-to-rem(25px);
+  row-gap: px-to-rem(25px);
 }
 
 .input-item {
   box-sizing: border-box;
 
-  min-width: 270px;
-  min-height: 50px;
+  min-width: px-to-rem(270px);
+  min-height: px-to-rem(50px);
 
-  padding: 0 20px;
+  padding: px-to-rem(0px 20px);
 
   color: white;
 
   background: none;
 
-  border: 2px solid $dark-gray;
-  border-radius: 3px;
+  border: px-to-rem(2px) solid $dark-gray;
+  border-radius: px-to-rem(3px);
 
   &:focus {
     outline: none;

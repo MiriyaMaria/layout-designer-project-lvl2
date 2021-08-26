@@ -1,36 +1,36 @@
 .section {
-  padding-top: 100px;
+  padding-top: px-to-rem(100px);
 
   text-align: center;
 
   &_title {
     margin-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: px-to-rem(48px);
 
     font-weight: bold;
-    font-size: 38px;
+    font-size: px-to-rem(38px);
 
     text-align: center;
     text-transform: uppercase;
 
     @include mobile {
-      font-size: 18px;
+      font-size: px-to-rem(18px);
     }
 
     &__align {
-      margin-bottom: 48px;
+      margin-bottom: px-to-rem(48px);
 
       text-align: left;
     }
   }
 
   &_text {
-    width: 600px;
+    width: px-to-rem(600px);
 
-    margin-right: 144px;
+    margin-right: px-to-rem(144px);
 
-    font-size: 16px;
-    line-height: 24px;
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(24px);
 
     text-align: left;
 
@@ -42,18 +42,18 @@
   }
 
   &:last-child {
-    margin-bottom: 100px;
+    margin-bottom: px-to-rem(100px);
   }
 
   &_align {
-    padding-top: 100px;
+    padding-top: px-to-rem(100px);
 
     color: white;
 
     text-align: left;
 
     &:last-child {
-      margin-bottom: 103px;
+      margin-bottom: px-to-rem(103px);
     }
   }
 }
