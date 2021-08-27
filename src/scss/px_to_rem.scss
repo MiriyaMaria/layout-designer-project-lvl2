@@ -5,7 +5,7 @@
   @each $number in $value {
     $rem-value: 0;
 
-    @if (str-index('#{$value}', 'px')) {
+    @if (str-index('#{$number}', 'px')) {
       $rem-value: $number / 16px;
     }
 
