@@ -17,7 +17,7 @@
   font-size: px-to-rem(12.8px);
   text-transform: uppercase;
 
-  & > a {
+  &_link {
     color: white;
     text-decoration: none;
 
@@ -37,7 +37,7 @@
 
   text-transform: capitalize;
 
-  & > a {
+  &_link {
     color: white;
     text-decoration: none;
 
