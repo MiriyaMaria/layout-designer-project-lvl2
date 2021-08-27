@@ -74,6 +74,10 @@
     text-transform: uppercase;
     text-decoration: none;
 
+    &:hover {
+      color: $orange;
+    }
+
     @include mini_tablet {
       font-weight: bold;
       font-size: px-to-rem(11px);
@@ -114,8 +118,4 @@
 .artist_page {
   font-weight: bold;
   font-size: px-to-rem(11px);
-
-  &:hover {
-    color: $orange;
-  }
 }
