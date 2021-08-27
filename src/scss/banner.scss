@@ -63,21 +63,7 @@
   }
 
   &_artist {
-    position: relative;
-    z-index: 0;
     padding: px-to-rem(200px 0px);
-
-    &_background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-
-      width: 100%;
-      height: 100%;
-
-      object-fit: cover;
-    }
 
     .btn {
       margin-right: 1.2rem;

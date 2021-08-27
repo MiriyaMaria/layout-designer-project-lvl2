@@ -2,9 +2,11 @@ $rem-base: 16px;
 
 @function px-to-rem($value) {
   $rem-list: ();
-   @each $number in $value {
+
+  @each $number in $value {
     $rem-value: $number / $rem-base;
     $rem-list: append($rem-list, #{$rem-value}rem);
   }
-@return #{$rem-list};
+
+  @return #{$rem-list};
 }

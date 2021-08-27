@@ -95,16 +95,16 @@
 
   &_item {
     color: $dark-gray;
-  
+
     font-size: px-to-rem(11px);
-  
+
     text-transform: uppercase;
     text-decoration: none;
-  
+
     &:hover {
       color: $orange;
     }
-  
+
     @include mini_tablet {
       font-weight: bold;
     }

@@ -23,7 +23,7 @@
   & > a {
     color: white;
     text-decoration: none;
- 
+
     &:hover {
       color: $orange;
     }
@@ -59,12 +59,12 @@
   text-transform: uppercase;
 
   & > a {
-   color: white;
-   text-decoration: none;
+    color: white;
+    text-decoration: none;
 
-   &:hover {
-     color: $orange;
-   }
+    &:hover {
+      color: $orange;
+    }
   }
 }
 
