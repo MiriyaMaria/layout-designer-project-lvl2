@@ -34,7 +34,7 @@
       width: px-to-rem(248px);
       height: px-to-rem(25px);
 
-      padding: px-to-rem(5px 0px 5px 10px);
+      padding: px-to-rem(5px 0 5px 10px);
 
       color: white;
 
@@ -65,7 +65,7 @@
 
   &_text {
     display: inline-block;
-    margin: px-to-rem(0px 91px 0px 16px);
+    margin: px-to-rem(0 91px 0 16px);
 
     color: $dark-gray;
 

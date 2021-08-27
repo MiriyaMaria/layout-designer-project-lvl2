@@ -27,7 +27,7 @@
     }
 
     &_title {
-      margin: px-to-rem(22px 0px 193px 0px);
+      margin: px-to-rem(22px 0 193px 0);
 
       font-weight: normal;
       font-size: px-to-rem(24px);
@@ -35,7 +35,7 @@
       text-transform: uppercase;
 
       @include mobile {
-        margin: px-to-rem(17px 0px 193px 0px);
+        margin: px-to-rem(17px 0 193px 0);
 
         font-size: px-to-rem(16px);
         line-height: px-to-rem(24px);
@@ -43,20 +43,20 @@
 
       &_first {
         @include mini_tablet {
-          margin: px-to-rem(17px 0px 194px 0px);
+          margin: px-to-rem(17px 0 194px 0);
         }
       }
     }
 
     &_price {
-      margin: px-to-rem(0px 0px 40px 0px);
+      margin: px-to-rem(0 0 40px 0);
 
       font-size: px-to-rem(64px);
       line-height: px-to-rem(64px);
     }
 
     &_text {
-      margin: px-to-rem(64px 0px);
+      margin: px-to-rem(64px 0);
 
       font-size: px-to-rem(12.8px);
       line-height: px-to-rem(19.2px);

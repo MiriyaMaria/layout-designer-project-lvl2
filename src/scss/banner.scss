@@ -1,7 +1,7 @@
 .banner {
   position: relative;
 
-  padding: px-to-rem(200px 0px);
+  padding: px-to-rem(200px 0);
 
   background-image: url("../images/banner.png");
   background-position: center;
@@ -63,7 +63,7 @@
   }
 
   &_artist {
-    padding: px-to-rem(200px 0px);
+    padding: px-to-rem(200px 0);
 
     .btn {
       margin-right: 1.2rem;
@@ -91,7 +91,7 @@
   min-width: px-to-rem(270px);
   min-height: px-to-rem(50px);
 
-  padding: px-to-rem(0px 20px);
+  padding: px-to-rem(0 20px);
 
   color: white;
 

@@ -21,7 +21,7 @@
     }
 
     &_title {
-      margin: px-to-rem(0px 0px 30px);
+      margin: px-to-rem(0 0 30px);
 
       font-weight: normal;
       font-size: px-to-rem(30px);
@@ -30,7 +30,7 @@
       text-transform: capitalize;
 
       @include mobile {
-        margin: px-to-rem(0px 0px 16px);
+        margin: px-to-rem(0 0 16px);
 
         font-size: px-to-rem(16px);
         line-height: px-to-rem(24px);
@@ -38,12 +38,12 @@
     }
 
     &_text {
-      margin: px-to-rem(0px 0px 24px);
+      margin: px-to-rem(0 0 24px);
 
       font-size: px-to-rem(16px);
 
       &_last {
-        margin: px-to-rem(0px 0px 16px);
+        margin: px-to-rem(0 0 16px);
       }
     }
 
@@ -51,12 +51,12 @@
       display: flex;
       gap: px-to-rem(16px);
 
-      margin: px-to-rem(0px 0px 46px 0px);
+      margin: px-to-rem(0 0 46px 0);
 
       font-size: px-to-rem(12px);
 
       @include mini_tablet {
-        margin: px-to-rem(0px 0px 45px 0px);
+        margin: px-to-rem(0 0 45px 0);
       }
 
       &_link {
