@@ -7,11 +7,37 @@
 
   &_artist {
     top: px-to-rem(22px);
+
+    &_page {
+      font-weight: bold;
+      font-size: px-to-rem(11px);
+    }
   }
 
   &_logo {
     display: flex;
     align-items: center;
+
+    &_text {
+      display: inline-block;
+      margin: px-to-rem(0 91px 0 16px);
+
+      color: $secondaryDark;
+
+      font-size: px-to-rem(10px);
+
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:hover {
+        color: $hover;
+      }
+
+      @include mini_tablet {
+        font-weight: bold;
+        font-size: px-to-rem(11px);
+      }
+    }
   }
 
   &_menu {
@@ -36,7 +62,7 @@
 
       padding: px-to-rem(5px 0 5px 10px);
 
-      color: white;
+      color: $thirdLight;
 
       font-size: px-to-rem(14px);
       line-height: 1.2;
@@ -57,65 +83,9 @@
       }
     }
   }
-}
 
-.logo {
-  width: px-to-rem(24px);
-  height: px-to-rem(24px);
-
-  &_text {
-    display: inline-block;
-    margin: px-to-rem(0 91px 0 16px);
-
-    color: $dark-gray;
-
-    font-size: px-to-rem(10px);
-
-    text-transform: uppercase;
-    text-decoration: none;
-
-    &:hover {
-      color: $orange;
-    }
-
-    @include mini_tablet {
-      font-weight: bold;
-      font-size: px-to-rem(11px);
-    }
+  &_icon {
+    width: px-to-rem(24px);
+    height: px-to-rem(24px);
   }
-}
-
-.menu {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-
-  & > li {
-    display: flex;
-
-    margin-right: px-to-rem(24px);
-  }
-
-  &_item {
-    color: $dark-gray;
-
-    font-size: px-to-rem(11px);
-
-    text-transform: uppercase;
-    text-decoration: none;
-
-    &:hover {
-      color: $orange;
-    }
-
-    @include mini_tablet {
-      font-weight: bold;
-    }
-  }
-}
-
-.artist_page {
-  font-weight: bold;
-  font-size: px-to-rem(11px);
 }

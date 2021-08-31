@@ -4,7 +4,7 @@
   padding-right: px-to-rem(30px);
   padding-left: px-to-rem(30px);
 
-  color: white;
+  color: $thirdLight;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -22,10 +22,10 @@
 
     font-size: px-to-rem(13.3px);
 
-    background-color: $green;
+    background-color: $button-submit;
 
     &:hover {
-      color: $orange;
+      color: $hover;
 
       cursor: pointer;
 
@@ -41,12 +41,12 @@
 
     font-size: px-to-rem(16px);
 
-    border: px-to-rem(1px) solid $dark-gray;
+    border: px-to-rem(1px) solid $secondaryDark;
 
     &:hover {
-      color: $orange;
+      color: $hover;
 
-      border-color: $orange;
+      border-color: $hover;
     }
   }
 
@@ -59,12 +59,12 @@
 
     font-size: px-to-rem(12.8px);
 
-    border: px-to-rem(2px) solid $dark-gray;
+    border: px-to-rem(2px) solid $secondaryDark;
 
     &:hover {
-      color: $orange;
+      color: $hover;
 
-      border-color: $orange;
+      border-color: $hover;
     }
 
     &_last {
@@ -82,12 +82,12 @@
 
     text-transform: none;
 
-    background-color: $red;
+    background-color: $button-download;
 
     border-radius: px-to-rem(32px);
 
     &:hover {
-      color: $orange;
+      color: $hover;
     }
   }
 
@@ -108,15 +108,15 @@
     border: px-to-rem(2px) solid transparent;
 
     &:hover {
-      border-color: $orange;
+      border-color: $hover;
     }
   }
 
   &_blue {
-    background-color: $purple;
+    background-color: $button-mix;
   }
 
   &_red {
-    background-color: $red;
+    background-color: $button-download;
   }
 }

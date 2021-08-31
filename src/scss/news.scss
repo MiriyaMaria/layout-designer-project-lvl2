@@ -10,9 +10,12 @@
       row-gap: px-to-rem(50px);
     }
 
-    &_reverse {
-      @include tablet {
-        grid-auto-flow: dense;
+    &:nth-of-type(2n) {
+      @media screen and (min-width: px-to-rem(1239px)) {
+        .news_photo {
+          grid-row-start: 1;
+          grid-column-start: -1;
+        }
       }
     }
 
@@ -62,7 +65,7 @@
       &_link {
         margin: 0;
 
-        color: $orange;
+        color: $hover;
 
         text-transform: uppercase;
       }
@@ -76,18 +79,14 @@
       }
     }
   }
-}
 
-.news_photo {
-  @include tablet {
-    width: 100%;
-
-    &_reverse {
-      grid-row-start: 1;
+  &_photo {
+    @include tablet {
+      width: 100%;
     }
   }
-}
 
-.date {
-  margin: 0;
+  &_date {
+    margin: 0;
+  }
 }

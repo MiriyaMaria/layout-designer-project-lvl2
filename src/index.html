@@ -11,8 +11,8 @@
     <header id="navigation" class="header">
         <div class="container flex flex_align">
             <div class="header_logo">
-                <img src="./images/logo.svg" alt="Иконка Music Box" class="logo">
-                <a href="#" class="logo_text">music box</a>
+                <img src="./images/logo.svg" alt="Иконка Music Box" class="header_icon">
+                <a href="#" class="header_logo_text">music box</a>
             </div>
             <nav class="header_menu ">
                 <ul class="menu flex">
@@ -34,8 +34,8 @@
                 <h2 class="banner_title_small">без ограничений</h2>
                 <p class="banner_description">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
                 <form action="/" class="sign-up">
-                    <input class="input-item" type="text" placeholder="Имя">
-                    <input class="input-item" type="email" placeholder="Email">
+                    <input class="sign-up-input" type="text" placeholder="Имя">
+                    <input class="sign-up-input" type="email" placeholder="Email">
                     <button type="submit" class="btn btn_submit">получить доступ</button>
                 </form>
             </div>
@@ -74,23 +74,23 @@
                     <div class="news_item_author">
                         <img src="./images/avatar.png" alt="Аватар" class="news_item_author_avatar">
                         <p  class="news_item_author_link">music box</p>
-                        <p class="date">17/01/2020</p>
+                        <p class="news_date">17/01/2020</p>
                     </div>
                     <a href="artist.html" class="btn btn_more">К альбому</a>
                 </div>
             </div>
-            <div class="news_item news_item_reverse">
+            <div class="news_item">
+                <img class="news_photo" src="./images/ordinary_man.png" alt="Ozzi Osburn">
                 <div class="news_item_body">
                     <h3 class="news_item_title">Ordinary man</h3>
                     <p class="news_item_text news_item_text_last">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</p>
                     <div class="news_item_author">
                         <img src="./images/avatar.png" alt="Аватар" class="news_item_author_avatar">
                         <p  class="news_item_author_link">music box</p>
-                        <p class="date">24/02/2020</p>
+                        <p class="news_date">24/02/2020</p>
                     </div>
                     <a href="artist.html" class="btn btn_more btn_more_last">К альбому</a>
                 </div>
-                <img class="news_photo news_photo_reverse" src="./images/ordinary_man.png" alt="Ozzi Osburn">
             </div>
         </section>
         <section id="page-app" class="section container">
@@ -105,7 +105,7 @@
             </div>
         </section>
     </main>
-    <footer class="bg-gradient">
+    <footer class="footer">
         <div class="container footer_wrapper_up">
             <nav class="about">
                 <h2 class="footer_title">О нас</h2>
@@ -127,7 +127,7 @@
             </nav>
             <div class="contacts">
                 <h2 class="footer_title">Контакты</h2>
-                <div class="contacts_links">
+                <div class="footer_contacts">
                     <a href="#">hello@music.box</a><br>
                     <p>Russia, Moscow. Music Box studio</p>
                     <a href="#">+ 7 499 999 99 99</a>
@@ -135,7 +135,7 @@
             </div>
             <div class="social_media">
                 <h2 class="footer_title">Подписывайтесь</h2>
-                <div class="link_wrapper">
+                <div class="footer_social">
                     <a href="#" class="footer_link"><img src="./images/google+.png" alt="google+"></a>
                     <a href="#" class="footer_link"><img src="./images/twitter.png" alt="twitter"></a>
                     <a href="#" class="footer_link"><img src="./images/facebook.png" alt="facebook"></a>

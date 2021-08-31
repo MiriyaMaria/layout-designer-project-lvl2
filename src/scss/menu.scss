@@ -1,0 +1,29 @@
+.menu {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  & > li {
+    display: flex;
+
+    margin-right: px-to-rem(24px);
+  }
+
+  &_item {
+    color: $secondaryDark;
+
+    font-size: px-to-rem(11px);
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: $hover;
+    }
+
+    @include mini_tablet {
+      font-weight: bold;
+    }
+  }
+}

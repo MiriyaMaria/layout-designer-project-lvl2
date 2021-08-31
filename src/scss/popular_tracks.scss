@@ -4,47 +4,64 @@
 
   column-gap: px-to-rem(50px);
   row-gap: px-to-rem(25px);
-}
 
-.artist_name {
-  display: block;
+  &_track {
+    @include mini_tablet {
+      flex-direction: row;
+    }
 
-  color: $gray;
+    &_time {
+      margin-right: 0;
 
-  text-transform: initial;
-}
+      color: $secondaryLight;
 
-.time {
-  margin-right: 0;
-
-  color: $gray;
-}
-
-.track_info {
-  flex-grow: 1;
-  align-items: center;
-  justify-content: space-between;
-
-  max-width: px-to-rem(480px);
-
-  font-size: px-to-rem(12.8px);
-
-  @include mini_tablet {
-    flex-direction: row;
+      @include mobile {
+        margin-right: px-to-rem(7px);
+      }
+    }
   }
-}
 
-.track_name {
-  text-transform: uppercase;
-}
+  &_image {
+    width: px-to-rem(55px);
+    margin-right: px-to-rem(15px);
+  }
 
-.album {
-  width: px-to-rem(55px);
-  margin-right: px-to-rem(15px);
-}
+  &_info {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
 
-@include mini_tablet {
-  .popular_track {
-    flex-direction: row;
+    max-width: px-to-rem(480px);
+
+    font-size: px-to-rem(12.8px);
+
+    @include mini_tablet {
+      flex-direction: row;
+    }
+  }
+
+  &_album {
+    margin: 0;
+
+    font-weight: bold;
+    font-size: px-to-rem(12.8px);
+    text-transform: uppercase;
+
+    &_link {
+      color: $thirdLight;
+      text-decoration: none;
+
+      &:hover {
+        color: $hover;
+      }
+    }
+
+    &_name {
+      display: block;
+
+      color: $secondaryLight;
+
+      text-transform: initial;
+    }
   }
 }

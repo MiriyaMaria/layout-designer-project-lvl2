@@ -55,7 +55,7 @@
       margin-top: px-to-rem(16px);
       margin-bottom: px-to-rem(48px);
 
-      color: white;
+      color: $thirdLight;
 
       font-size: px-to-rem(16px);
       text-align: left;
@@ -69,38 +69,5 @@
       margin-right: 1.2rem;
       margin-bottom: px-to-rem(20px);
     }
-  }
-}
-
-.sign-up {
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(px-to-rem(270px), 1fr));
-
-  max-width: px-to-rem(570px);
-
-  margin: 0 auto;
-
-  column-gap: px-to-rem(25px);
-  row-gap: px-to-rem(25px);
-}
-
-.input-item {
-  box-sizing: border-box;
-
-  min-width: px-to-rem(270px);
-  min-height: px-to-rem(50px);
-
-  padding: px-to-rem(0 20px);
-
-  color: white;
-
-  background: none;
-
-  border: px-to-rem(2px) solid $dark-gray;
-  border-radius: px-to-rem(3px);
-
-  &:focus {
-    outline: none;
   }
 }

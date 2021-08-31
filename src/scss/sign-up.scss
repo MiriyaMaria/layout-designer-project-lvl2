@@ -1,0 +1,32 @@
+.sign-up {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(px-to-rem(270px), 1fr));
+
+  max-width: px-to-rem(570px);
+
+  margin: 0 auto;
+
+  column-gap: px-to-rem(25px);
+  row-gap: px-to-rem(25px);
+
+  &-input {
+    box-sizing: border-box;
+
+    min-width: px-to-rem(270px);
+    min-height: px-to-rem(50px);
+
+    padding: px-to-rem(0 20px);
+
+    color: $thirdLight;
+
+    background: none;
+
+    border: px-to-rem(2px) solid $secondaryDark;
+    border-radius: px-to-rem(3px);
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

@@ -20,6 +20,10 @@
     margin-bottom: px-to-rem(43px);
     padding: 0 1.5rem;
 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+
     border-radius: 1rem;
 
     @include mobile {
@@ -75,28 +79,13 @@
 
   &_free {
     background-image: (url("../images/subscribe_1.png"));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: border-box;
   }
 
   &_standard {
     background-image: (url("../images/subscribe_2.png"));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: border-box;
   }
 
   &_premium {
     background-image: (url("../images/subscribe_3.png"));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-origin: border-box;
   }
-}
-
-.currency {
-  font-size: px-to-rem(32px);
-  text-transform: uppercase;
-  vertical-align: text-top;
 }

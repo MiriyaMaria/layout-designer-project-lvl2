@@ -13,11 +13,11 @@
 body {
   margin: 0;
 
-  color: $dark-gray;
+  color: $secondaryDark;
 
   font: px-to-rem(18px)/1.5 Roboto, sans-serif;
 
-  background-color: $dark;
+  background-color: $primaryDark;
 }
 
 .container {
@@ -63,4 +63,10 @@ body {
   vertical-align: middle;
 
   filter: invert(1);
+}
+
+.currency {
+  font-size: px-to-rem(32px);
+  text-transform: uppercase;
+  vertical-align: text-top;
 }
