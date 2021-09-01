@@ -4,7 +4,7 @@
   padding-right: px-to-rem(30px);
   padding-left: px-to-rem(30px);
 
-  color: $thirdLight;
+  color: color('blank');
   text-transform: uppercase;
   text-decoration: none;
 
@@ -22,10 +22,10 @@
 
     font-size: px-to-rem(13.3px);
 
-    background-color: $button-submit;
+    background-color: color('submit');
 
     &:hover {
-      color: $hover;
+      color: color('hover');
 
       cursor: pointer;
 
@@ -41,12 +41,12 @@
 
     font-size: px-to-rem(16px);
 
-    border: px-to-rem(1px) solid $secondaryDark;
+    border: px-to-rem(1px) solid color('light');
 
     &:hover {
-      color: $hover;
+      color: color('hover');
 
-      border-color: $hover;
+      border-color: color('hover');
     }
   }
 
@@ -57,14 +57,16 @@
     padding-top: px-to-rem(16px);
     padding-bottom: px-to-rem(16px);
 
+    color: color('light');
+
     font-size: px-to-rem(12.8px);
 
-    border: px-to-rem(2px) solid $secondaryDark;
+    border: px-to-rem(2px) solid color('light');
 
     &:hover {
-      color: $hover;
+      color: color('hover');
 
-      border-color: $hover;
+      border-color: color('hover');
     }
 
     &_last {
@@ -82,12 +84,12 @@
 
     text-transform: none;
 
-    background-color: $button-download;
+    background-color: color('download');
 
     border-radius: px-to-rem(32px);
 
     &:hover {
-      color: $hover;
+      color: color('hover');
     }
   }
 
@@ -108,15 +110,15 @@
     border: px-to-rem(2px) solid transparent;
 
     &:hover {
-      border-color: $hover;
+      border-color: color('hover');
     }
   }
 
   &_blue {
-    background-color: $button-mix;
+    background-color: color('mix');
   }
 
   &_red {
-    background-color: $button-download;
+    background-color: color('download');
   }
 }

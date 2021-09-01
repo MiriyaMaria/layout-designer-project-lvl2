@@ -22,7 +22,7 @@
       display: inline-block;
       margin: px-to-rem(0 91px 0 16px);
 
-      color: $secondaryDark;
+      color: color('light');
 
       font-size: px-to-rem(10px);
 
@@ -30,7 +30,7 @@
       text-decoration: none;
 
       &:hover {
-        color: $hover;
+        color: color('hover');
       }
 
       @include mini_tablet {
@@ -62,7 +62,7 @@
 
       padding: px-to-rem(5px 0 5px 10px);
 
-      color: $thirdLight;
+      color: color('third');
 
       font-size: px-to-rem(14px);
       line-height: 1.2;

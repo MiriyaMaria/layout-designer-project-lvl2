@@ -13,11 +13,11 @@
 body {
   margin: 0;
 
-  color: $secondaryDark;
+  color: color('light');
 
   font: px-to-rem(18px)/1.5 Roboto, sans-serif;
 
-  background-color: $primaryDark;
+  background-color: color('primary');
 }
 
 .container {

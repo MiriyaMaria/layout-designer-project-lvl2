@@ -1,8 +1,8 @@
 .footer {
-  background: linear-gradient(89.75deg, $button-mix 32.83%, $button-download 81.56%);
+  background: linear-gradient(89.75deg, color('mix') 32.83%, color('download') 81.56%);
 
   &_link {
-    color: $secondaryLight;
+    color: color('secondary');
 
     font-size: inherit;
     line-height: px-to-rem(24px);
@@ -10,12 +10,12 @@
     text-decoration: none;
 
     &:hover {
-      color: $hover;
+      color: color('hover');
     }
   }
 
   &_wrapper {
-    border-top: px-to-rem(2px) solid $secondaryDark;
+    border-top: px-to-rem(2px) solid color('light');
 
     &_up {
       display: grid;
@@ -68,7 +68,7 @@
     margin-top: 0;
     margin-bottom: px-to-rem(15px);
 
-    color: $thirdLight;
+    color: color('blank');
 
     font-weight: bold;
     font-size: px-to-rem(18px);
@@ -87,11 +87,11 @@
     }
 
     & > a {
-      color: $secondaryLight;
+      color: color('secondary');
       text-decoration: none;
 
       &:hover {
-        color: $hover;
+        color: color('hover');
       }
     }
   }

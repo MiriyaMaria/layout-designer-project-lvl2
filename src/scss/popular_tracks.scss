@@ -13,7 +13,7 @@
     &_time {
       margin-right: 0;
 
-      color: $secondaryLight;
+      color: color('secondary');
 
       @include mobile {
         margin-right: px-to-rem(7px);
@@ -48,18 +48,18 @@
     text-transform: uppercase;
 
     &_link {
-      color: $thirdLight;
+      color: color('blank');
       text-decoration: none;
 
       &:hover {
-        color: $hover;
+        color: color('hover');
       }
     }
 
     &_name {
       display: block;
 
-      color: $secondaryLight;
+      color: color('secondary');
 
       text-transform: initial;
     }

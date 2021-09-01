@@ -30,11 +30,11 @@
     text-transform: capitalize;
 
     &_link {
-      color: $thirdLight;
+      color: color('blank');
       text-decoration: none;
 
       &:hover {
-        color: $hover;
+        color: color('hover');
       }
     }
   }
@@ -42,7 +42,7 @@
   &_description {
     margin: 0;
 
-    color: $secondaryLight;
+    color: color('secondary');
 
     font-size: px-to-rem(16px);
     line-height: px-to-rem(24px);

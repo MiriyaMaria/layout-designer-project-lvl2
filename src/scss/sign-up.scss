@@ -18,11 +18,11 @@
 
     padding: px-to-rem(0 20px);
 
-    color: $thirdLight;
+    color: color('third');
 
     background: none;
 
-    border: px-to-rem(2px) solid $secondaryDark;
+    border: px-to-rem(2px) solid color('light');
     border-radius: px-to-rem(3px);
 
     &:focus {

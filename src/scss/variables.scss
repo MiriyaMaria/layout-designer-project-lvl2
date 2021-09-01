@@ -1,9 +1,11 @@
-$primaryDark: #08020d !default;
-$secondaryLight: #e0e0e0 !default;
-$secondaryDark: #cacaca !default;
-$thirdLightDark: #3c3b3d !default;
-$button-submit: #34c176 !default;
-$hover: #f89202 !default;
-$button-mix: #5328a1 !default;
-$button-download: #95390c !default;
-$thirdLight: white;
+$theme-colors: (
+  primary: #08020d,
+  secondary: #e0e0e0,
+  third: #3c3b3d,
+  light: #cacaca,
+  blank: #fff,
+  submit: #34c176,
+  hover: #f89202,
+  mix: #5328a1,
+  download: #95390c
+);

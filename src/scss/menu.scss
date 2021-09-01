@@ -11,7 +11,7 @@
   }
 
   &_item {
-    color: $secondaryDark;
+    color: color('light');
 
     font-size: px-to-rem(11px);
 
@@ -19,7 +19,7 @@
     text-decoration: none;
 
     &:hover {
-      color: $hover;
+      color: color('hover');
     }
 
     @include mini_tablet {
